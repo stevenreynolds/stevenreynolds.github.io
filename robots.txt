@@ -1,0 +1,5 @@
+Sitemap: http://stevenreynolds.com/sitemap.xml
+User-agent: *
+Disallow: /404.html
+Disallow: /php/index.html
+Disallow: /img/404-ninja.png

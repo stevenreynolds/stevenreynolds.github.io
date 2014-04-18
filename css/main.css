@@ -1,0 +1,1378 @@
+/* ==========================================================================
+   Author - Steven Reynolds  // stevenreynolds.com
+   ========================================================================== */
+
+body { font-size: 1em; line-height: 1.4;  padding-bottom: 4em; }
+::-moz-selection { background: #16AD99; text-shadow: none; }
+::selection { background: #16AD99; text-shadow: none; }
+.chromeframe { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0;}
+img { vertical-align: middle; border: none; }
+a{ text-decoration: none; }
+ol, ul{ margin: 0; padding: 0; }
+body {-webkit-font-smoothing: antialiased; font-smooth: always; text-shadow: 1px 1px 1px rgba(0,0,0,0.004); font: 16px/24px 'robotoregular'; }
+.wrapper { width: 1140px; margin: 0 auto; }
+
+
+
+/* ==========================================================================
+   Colours
+   ========================================================================== */
+body{
+   	background: #2F353E;  /* Background for Site */
+}
+html, button, input, select, textarea, a { 
+	color: #909EA4; /* General Body Text Color*/
+}
+.main ul li:before, h1 span, h2 span, h3 span, h4 span, .highlight, h5, h6, h1:after, h2:after, h3:after, .main-container a:hover, 
+.more:before, ol > li:before, .cta a:hover, .error[generated=true], .footable.breakpoint > tbody > tr > td.expand:before, blockquote cite, ul.social-link a:hover, .fancybox-opened .fancybox-title a:hover{
+	color: #16AD99; /* Feature Color*/
+}   
+a.btn, input[type=button], nav a.active, input[type=submit], #menu-icon{
+	background-color: #16AD99 ; /* Button Back Ground Color*/
+	color: #fff; /* Button Text Color*/
+}
+a.btn:hover, input[type=button]:hover, nav a:hover, input[type=submit]:hover, #menu-icon:hover, #menu-icon.active {
+	background-color: #5D6B80; /* Button Back Ground Color on Hover*/
+	color: #fff;
+}
+h1, h2, h3, h4, .nav a, h1 a, h2 a, h3 a, h4 a, #response .success, .success:before, #response .failure{
+	color: #DDE6E9; /* Headings Color*/
+} 
+strong, b, .lead, .main table th, blockquote, .more, .cta a{
+	color: #DDE6E9; /* Headings Color*/
+}
+#masthead{
+	background: #3C434D!important; /* Home Page Masthead Background Color - Match to image*/
+}
+.cta, .cta h1, .cta h2, .cta h4, .cta h5{
+	color: #fff; /* Masthead Headings Color*/
+}
+.cta h3{
+	color: #e2e2e2; /* Masthead Headings Color*/
+}
+
+.flex-control-paging li a.flex-active { background-color: #16AD99; }
+
+
+
+/* ==========================================================================
+   Logos
+   ========================================================================== */  
+.logo{
+	max-width: 343px; /* Match logo size */
+}
+.logo-foot{
+	max-width: 145px; /* Match footer logo size */
+}
+
+
+
+
+	
+
+/* ==========================================================================
+   Masthead Styles
+   ========================================================================== */
+#masthead{
+	display: block;
+	height: 1050px;
+}
+
+.cta h1{
+	font-family: 'robotoblack';
+	font-size: 96px;
+	margin-bottom: 15px;
+	letter-spacing: -2px;
+}
+.cta h3{
+	font-family: 'aleoitalic';
+	letter-spacing: 0;
+	line-height: 115%;
+}
+.cta h1:after, .cta h2:after, .cta h3:after {
+	content: none;
+}
+.cta{
+	margin-top: 18%;
+	padding-bottom: 30px;
+	font-size: 18px;
+}
+.cta a{
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+.cta em {color: #909EA4;}
+
+
+
+
+/* ==========================================================================
+   Main Navigation Styles
+   ========================================================================== */
+
+.logo{
+	display: inline-block;
+	float: left;
+}   
+.logo img, .logo-foot img{
+	width: 100%;
+}
+
+#nav-wrap {
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
+
+.header-container nav{
+	float: right;
+	margin-top: 10px;
+}
+
+.header-container .nav li{
+	float: left;
+	position: relative;
+	padding: .4em .4em;
+}
+.nav a{
+	font-family: 'robotobold_condensed';
+	font-size: 20px;
+	padding: 0.3em 1.2em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space: nowrap;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+.tinynav { 
+	display: none; 
+	width: 100%;
+	margin-top: .5em;
+	margin-bottom: .6em;
+}
+
+/* menu icon */
+#menu-icon {
+	display: none;
+	font-family: 'robotobold_condensed';
+	font-size: 20px;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+#menu-icon span{
+	width: 32px;
+	height: 23px;
+	display: inline-block;
+	padding-right: 10px;
+	position: relative;
+	top: -2px;
+}
+#menu-icon span img{
+	width: 100%;	
+}
+
+/* ==========================================================================
+   Main Container General Layout Styles
+   ========================================================================== */
+.header-container header{
+	padding-top: 60px;
+	padding-top: 60px;
+	padding-bottom: 45px;
+	border-bottom: 1px solid #434952;
+}
+
+.header-container header .wrapper {
+	padding-top: 0px;
+	border-bottom: 1px solid #434952;
+	padding-bottom: 45px;
+	position: relative;
+}
+
+.main-container{
+	padding: 25px 0;
+}
+.main-content{
+	width: 65%;
+	float: left;
+}
+.main-content.full{
+	width: 100%;
+	float: none;
+}
+.main-content img, .right-aside img{
+	max-width: 100%;width: 100%;
+	background: #16AD99;
+	border: 6px solid #292D36;
+	margin: 1em 0;
+	-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+}
+a img{
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	opacity: 1;
+	position: relative;
+}
+a img:hover{
+	opacity: .6;
+}
+
+a img.nofade:hover {
+	opacity: 1;
+}
+
+.right-aside{
+	float: right;
+	width: 24%;
+	border-left: 1px solid #434952;
+	padding-left: 4%;
+}
+.right-aside img{
+	width: 100%;
+}
+
+img.no-border{
+	border: none;
+}
+
+/* ============= Mosaic Styles ===============*/
+.mosaic-block {
+	position:relative;
+	overflow:hidden;
+	background:#292D36 url(../img/progress.gif) no-repeat center center;
+	margin: 1em 0;
+	border: 5px solid #292D36;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	max-width: 100%;
+}
+.mosaic-block img{
+	margin: 0;
+	border: none;
+	width: 100%;
+}
+.mosaic-backdrop {
+	display:none;
+	top:0;
+	height:100%;
+	background:#292D36;
+}
+	
+.mosaic-overlay {
+	display:none;
+	z-index:5;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#111;
+}		
+.fade .mosaic-overlay {
+	background:url(../img/hover-magnify.png) no-repeat center center;
+	background-size: 49px 49px;
+	background-color: rgba(41, 45, 54, .4);
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+	filter:alpha(opacity=00);
+	display:none;
+}
+@media (min--moz-device-pixel-ratio: 1.5),
+	(-o-min-device-pixel-ratio: 3/2),
+	(-webkit-min-device-pixel-ratio: 1.5),
+	(min-device-pixel-ratio: 1.5),
+	(min-resolution: 1.5dppx) {
+	/* on retina, use image that's scaled by 2 */
+.fade .mosaic-overlay{
+	background: url(../img/hover-magnify@2x.png) no-repeat center 0; /*Image of iphone 5 in hand */
+	background-size: 98px 98px;
+}
+}
+
+.fade .mosaic-overlay.goto_post{
+	background:url(../img/hover-gotopost.png) no-repeat center center;
+	background-size: 49px 49px;
+	background-color: rgba(22, 173, 153, .3);
+	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+	filter:alpha(opacity=00);
+	display:none;
+}
+@media (min--moz-device-pixel-ratio: 1.5),
+	(-o-min-device-pixel-ratio: 3/2),
+	(-webkit-min-device-pixel-ratio: 1.5),
+	(min-device-pixel-ratio: 1.5),
+	(min-resolution: 1.5dppx) {
+	/* on retina, use image that's scaled by 2 */
+.fade .mosaic-overlay.goto_post{
+	background: url(img/hover-gotopost@2x.png) no-repeat center 0; /*Image of iphone 5 in hand */
+	background-size: 98px 98px;
+}
+}
+
+/* ============= Columns ===============*/ 
+.half{
+	width: 47%;
+	margin-right: 6%;
+	float: left;
+}
+.third{
+	width: 30%;
+	margin-right: 5%;
+	float: left;
+}
+.fourths{
+	width: 22%;
+	margin-right: 4%;
+	float: left;
+}
+.two-third, .cta.two-third{
+	width: 65%;
+	margin-right: 5%;
+	float: left;
+}
+.three-fourths{
+	width: 74%;
+	margin-right: 4%;
+	float: left;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6, p{
+	word-wrap: break-word;
+}   
+h1, h2, h3, h4, h5, h6{ 
+	font-weight: normal;
+	line-height: 100%;
+	letter-spacing: -1px;
+	margin: 25px 0 .5em;
+}
+h1{
+	font-size: 66px;
+}
+h2{
+	font-size: 36px;
+	margin-top: 15px;
+}
+h3{
+	font-size: 28px;
+}
+h4, h5{
+	font-size: 24px;
+}
+h6{
+	font-size: 14px;
+	letter-spacing: 0px;
+	position: relative;
+}
+h6.meta, blockquote h6{
+	top: -1.4em;
+}
+strong, h1, h2, h3, h4, h5, h6, b, .more, ol > li:before, .cta a{
+	font-family: 'robotobold';
+	font-weight: normal;
+}
+h1:after, h2:after, h3:after{
+	content: ".";
+	font-size: 56px;
+	position: relative;
+	padding-left: 3px;
+}
+em{ 
+	font-style: normal;
+	font-family: 'robotoitalic'; 
+}
+.lead, blockquote{
+	font-size: 24px;
+	line-height: 32px;
+	font-family: 'aleoitalic';
+}
+cite{
+	font-family: 'robotobold';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+}
+blockquote cite{
+	display: block;
+	text-transform: uppercase;
+	margin-top: 1em;
+}
+.lead{
+	margin-top: 0;
+}
+
+.main-container a{
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	cursor: pointer;
+}
+
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #434952; padding: 0; margin: 3em 0; }
+hr.dash { display: block; height: 1px; border: 0; border-top: 1px dashed #434952; margin: 3em 0; padding: 0; }
+hr.dots { display: block; height: 1px; border: 0; border-top: 1px dotted #434952; margin: 3em 0; padding: 0; }
+
+
+iframe{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+	width: 98%;
+}
+.fluid-width-video-wrapper{
+	margin-bottom: 1em;
+	background-color: #ffffff;
+}
+.fluid-width-video-wrapper iframe{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+
+blockquote, blockquote.right, blockquote.left{
+	margin: 0 3% 3%;
+}
+
+
+
+/* ============= Lists ===============*/   
+.main ul, .main ol{
+	margin-bottom: 12px;
+}   
+.main ul li, .more{
+	list-style-type: none;
+	line-height: 20px;
+	padding-top: 5px;
+	padding-bottom: 8px;
+	position: relative;
+	padding-left: 22px;
+}
+
+.main ul li:before, .more:before{
+	content: "g";
+	font-family: 'bulletsregular';
+	font-size: 16px;
+	left: 3px;
+	top: 6px;
+	position: absolute;
+}
+.main ol{
+	margin-left: 22px;
+}
+ol {
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+}
+ol > li {
+    position:relative; /* Create a positioning context */
+    list-style:none; /
+	margin: 0 0 0 1em;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+ol > li:before {
+    content:counter(li) "."; /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    position:absolute;
+    top:-2px;
+    left:-1.5em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:1.5em;
+    margin-right:8px;
+    padding:4px;
+    text-align:center;
+}
+li ol,li ul {margin-top:6px;}
+ol ol li:last-child {margin-bottom:0;}
+
+
+
+
+/* ============= Buttons ===============*/
+a.btn, input[type=button], input[type=submit]{
+	border: none;
+	color: #fff;
+	font-weight: normal;
+	font-size: 18px;
+	font-family: 'robotobold';
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: .6em 1.2em;
+	white-space: nowrap;
+	display: inline-block;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
+a.btn:hover{
+	color: #fff;
+}
+a.small-btn{
+	font-size: 14px;
+	padding: .4em .9em;
+}
+a.xsmall-btn{
+	font-size: 12px;
+	padding: .2em .7em;
+}
+
+
+
+/* ============= Tables ===============*/
+.main table{
+	border: 1px solid #dde1e5;	
+	text-align: left;
+	width: 100%;
+	background: #ffffff;
+}
+.main table th{
+	padding: .5em;
+	border: 1px solid #dde1e5;
+	background-color: #ebedef;
+	vertical-align: top;	
+}
+.main table td{
+	padding: .5em;
+	border: 1px solid #dde1e5;
+	vertical-align: top;	
+}
+.main table tr:nth-child(2n+1){
+	background-color: #f8f8f8;
+}
+
+
+
+
+/* ============= Forms ===============*/
+form{
+	margin-top: 3em;
+}
+fieldset{
+	padding: 1em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #d9d6cf;
+	margin-bottom: 1em;
+}
+fieldset fieldset{
+	background: #ffffff;
+}
+label{
+	font-weight: normal;
+	font-family: 'robotobold';
+	padding-right: 1em;
+	display: block;
+}
+input[type=text],  input[type=email], input[type=password], textarea{
+ 	border: 1px solid #3C434D;
+	background: #3C434D;
+	padding: 10px 2%;
+	font-family: 'robotolight_italic';
+	color: #909EA4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	outline: none;
+	margin-bottom: 1em;
+	resize: none;
+	display: block;
+	width: 68%;
+	-webkit-appearance: none;
+}
+ input[type=text]:focus, textarea:focus, input[type=email]:focus, input[type=password]:focus{
+ 	border: 1px solid #16AD99;
+ }
+textarea{
+	width: 96%;
+	height: 140px;
+	display: block;
+	resize: none;
+	outline: none;
+}
+select, input[type=radio], input[type=checkbox] {
+	margin-bottom: 1em;
+	margin-right: 6px;
+}
+.error[generated=true] {
+	font-size: 14px;
+	font-family: 'robotoitalic';
+}
+
+
+
+
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+				
+footer .wrapper{
+	font-size: 14px;
+	color: #909EA4;
+	border-top: 1px solid #434952;
+	padding: 50px 0 50px;
+	margin-top: 20px;
+}
+.logo-foot{
+	display: inline-block;
+	padding-right: 5px;
+}
+ul.social-link li:before{
+	display: none;
+}
+ul.social-link li{
+	display: inline;	
+	padding: 0;
+}
+ul.social-link a{
+	 font-family: 'stevesfont';
+	 font-size: 40px;
+	 -webkit-transition: all 250ms ease-in-out;
+	 -moz-transition: all 250ms ease-in-out;
+	 -ms-transition: all 250ms ease-in-out;
+	 -o-transition: all 250ms ease-in-out;
+	 transition: all 250ms ease-in-out;
+	 opacity: .35;
+}
+ul.social-link a:hover{
+	opacity: 1;
+}
+
+
+/* ==========================================================================
+   custom styles
+   ========================================================================== */
+
+.center{
+	text-align: center;
+}
+
+.statistics{
+	display: table;
+	width: 100%;
+	margin-top: 1.5em;
+}
+.statistics ul{
+	display: table-row;
+}
+.statistics ul li{
+	display: table-cell;
+	text-align: center;
+	border-right: 1px solid #434952; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0em;
+}
+.statistics li:last-child{
+	border: none;
+}
+.statistics li:before{
+	display: none;
+}
+.statistics li h4{
+	font-family: 'stevesfont';
+	font-size: 60px;
+	color: #16AD99; 
+	font-weight: normal;
+	margin-bottom: .2em;
+}
+.statistics li h5{
+	font-size: 48px;
+	color: #909EA4; 
+	font-family: 'robotobold';
+	letter-spacing: -1px;
+	font-weight: normal;
+	margin: 0;
+}
+.statistics li h6{
+	color: #DDE6E9; 
+	font-size: 18px;
+	font-weight: normal;
+	font-family: 'RobotoLight';
+	margin-top: .4em;
+}
+
+
+.flexslider-quote blockquote{
+	 font-family: 'aleolightitalic';
+	 font-size: 32px;
+}
+
+.fancybox-title-float-wrap .child{
+	background: #2F353E;
+	text-shadow: none;
+}
+
+.fancybox-opened .fancybox-title a{
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+	cursor: pointer;
+}
+
+.fancybox-opened .fancybox-title a:hover{
+	color: #16AD99;
+}
+
+ul.filters{
+	border-bottom: 1px solid #434952;
+	border-top: 1px solid #434952;
+	margin-top: 2.5em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+ul.filters li:before{
+	content: "q";
+}
+ul.filters li{
+	display: inline-block;
+	margin-right: 1em;
+	border-right: 1px solid #434952;
+	padding-right: 1.2em;
+}
+ul.filters li:last-child{
+	border: none;
+	margin-right: 0;
+}
+ul.filters li.active a{
+	color: #16AD99; 
+}
+
+/* ==========================================================================
+   Media Queries 480
+   ========================================================================== */
+@media only screen and (max-width: 480px) { 
+	 input[type=text],  input[type=email], input[type=password], textarea, a.btn, input[type=button], input[type=submit]{
+		padding: 10px 2%;
+		width: 96%;
+	}
+	a.btn, input[type=button]{
+		text-align: center;
+	}
+	a.small-btn{
+		font-size: 14px;
+		padding: .4em 2%;
+	}
+	a.xsmall-btn{
+		font-size: 12px;
+		padding: .2em 2%;
+	}
+	iframe{
+		max-height: 320px;
+	}
+	div.header-container nav{
+		float: none;
+		margin-top: 0em;
+	}
+	#nav{
+		padding-left: 3%!important;
+		padding-right: 3%!important;
+		width: 94%!important;
+		left: 0;
+	}
+	#nav li{
+		padding: 0.4em;
+	}
+	#nav ul li a:before{
+		display: none;
+	}
+
+	#menu-icon{
+		display: block!important;
+		padding-left: 3%!important;
+		padding-right: 3%!important;
+		width: 94%!important;
+	}
+
+	.statistics li h4{
+	font-size: 36px;
+	}
+}
+
+
+
+/* ==========================================================================
+   Media Queries 600
+   ========================================================================== */
+@media only screen and (max-width: 600px) { 
+
+	.logo{
+		float: none;
+		padding-bottom: 20px;
+	}
+
+	div.header-container nav{
+		float: none;
+		margin-top: 0em;
+		text-align: center;
+	}
+	#nav{
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%!important;
+		left: 0;
+	}
+	#nav li{
+		padding: 0.4em;
+	}
+	#nav ul li a:before{
+		display: none;
+	}
+
+	.main-content img{
+		width: 100%;
+	}
+
+	#menu-icon{
+		display: block!important;
+		padding-left: 3%!important;
+		padding-right: 3%!important;
+		width: 94%!important;
+	}
+	
+	.backstretch{
+		opacity: 0.2;
+	}
+	.cta.two-third{
+		width: 100%;
+		margin-right: 0%;
+		float: none;
+	}
+
+	.statistics li h5 {
+		font-size: 38px;
+	}
+	
+	/* ============= Tables ===============*/
+		.main table{ 
+			border-left: 1px solid #cad2d7;
+			border-right: 1px solid #cad2d7;
+			border-top: none;
+			border-bottom: none;
+		}	
+}
+
+
+/* ==========================================================================
+   Media Queries 768
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+
+	#masthead{
+		display: block;
+		height: 100%;
+	}
+	
+	/* ============= Main Container General Layout Styles===============*/
+	.header-container header{
+		padding: 30px 0 25px;
+		text-align: left;
+	} 
+	.main-content, .right-aside{
+		width: 100%;
+		float: none;
+		border: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.main-container{
+		padding: 25px 0 10px;
+	}
+	.right-aside{
+		border-top: 1px solid #434952;
+		margin-top: 25px; 
+	}
+
+
+
+	/* ============= Columns ===============*/ 
+	.third, .half, .fourths, .two-third, ol.icon-lists li, ul.flag-lists li, .three-fourths, .foot.left, .foot.right{
+		width: 100%;
+		margin-right: 0%;
+		float: none;
+	}
+	.third, .half, .fourths, .two-third, .three-fourths{
+		margin-bottom: 30px;
+	}
+	blockquote.third, blockquote.half, blockquote.fourths, blockquote.two-third{
+		width: 100%;
+	}
+	blockquote, blockquote.right, blockquote.left{
+		margin: 0;
+	}
+	.foot.left, .foot.right{
+		display: block;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.mosaic-block.third{
+		width: 30%;
+		margin-right: 5%;
+		float: left;
+	}
+
+	.statistics li h6 {
+		font-size: 16px;
+	}
+	
+ }
+ 
+ /* ==========================================================================
+   Media Queries 868
+   ========================================================================== */
+@media only screen and (max-width: 853px) { 
+
+	.header-container nav{
+		text-align: left;
+	}
+	#nav{ 
+		display: none; 
+	}
+	#nav {
+		clear: both;
+		position: absolute;
+		top: 40px;
+		min-width: 160px;
+		z-index: 10000;
+		padding: 0;
+		display: none; 
+		right: 0px;
+		background: #5D6B80;
+		-webkit-border-radius: 3px 0px 3px 3px;
+		border-radius: 3px 0px 3px 3px;
+	}
+	#nav li {
+		clear: both;
+		float: none;
+		padding: 0;
+	}
+	#nav a, #nav ul a {
+		font: inherit;
+		background: none;
+		display: block;
+		padding: 0.2em 10px;
+		border: none;
+		color: #fff;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+	#nav a:hover, #nav ul a:hover{
+		color: #16ad99;
+		background: #586678;
+	}
+	#nav ul {
+		width: auto;
+		position: static;
+		display: block;
+		border: none;
+		background: inherit;
+	}
+	#nav ul li a{
+		padding-left: 0;
+	}
+	#nav-wrap {
+		position: relative;
+	}
+
+	#menu-icon {
+		display: inline-block;
+		cursor: pointer;
+		padding: 10px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+}
+
+
+
+/* ==========================================================================
+   Media Queries 1024
+   ========================================================================== */  
+
+@media only screen and (max-width: 1024px) { 
+	.cta h1 { font-size: 80px;}
+	#slides .cta {margin-top: 100px;}
+}
+@media only screen and (max-width: 968px) { 
+	.cta h1 { font-size: 64px;}
+}
+@media only screen and (max-width: 480px) { 
+	.cta h1 { font-size: 40px;}
+}
+
+/* ==========================================================================
+   Media Queries 1140
+   ========================================================================== */  
+@media only screen and (max-width: 1140px) { 
+	.wrapper { width: 92%; margin: 0 4%; }
+}
+
+
+
+
+
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+   
+@font-face {
+    font-family: 'aleoitalic';
+    src: url('../font/aleo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/aleo-italic-webfont.woff') format('woff'),
+         url('../font/aleo-italic-webfont.ttf') format('truetype'),
+         url('../font/aleo-italic-webfont.svg#aleoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'aleolightitalic';
+    src: url('../font/aleo-lightitalic-webfont.eot');
+    src: url('../font/aleo-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/aleo-lightitalic-webfont.woff') format('woff'),
+         url('../font/aleo-lightitalic-webfont.ttf') format('truetype'),
+         url('../font/aleo-lightitalic-webfont.svg#aleolightitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'bulletsregular';
+    src: url('../font/bullets-webfont.eot');
+    src: url('../font/bullets-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bullets-webfont.woff') format('woff'),
+         url('../font/bullets-webfont.ttf') format('truetype'),
+         url('../font/bullets-webfont.svg#bulletsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../font/roboto-black-webfont.eot');
+    src: url('../font/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto-black-webfont.woff') format('woff'),
+         url('../font/roboto-black-webfont.ttf') format('truetype'),
+         url('../font/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../font/roboto-bold-webfont.eot');
+    src: url('../font/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto-bold-webfont.woff') format('woff'),
+         url('../font/roboto-bold-webfont.ttf') format('truetype'),
+         url('../font/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotobold_condensed';
+    src: url('../font/roboto-boldcondensed-webfont.eot');
+    src: url('../font/roboto-boldcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto-boldcondensed-webfont.woff') format('woff'),
+         url('../font/roboto-boldcondensed-webfont.ttf') format('truetype'),
+         url('../font/roboto-boldcondensed-webfont.svg#robotobold_condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../font/roboto-italic-webfont.eot');
+    src: url('../font/roboto-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto-italic-webfont.woff') format('woff'),
+         url('../font/roboto-italic-webfont.ttf') format('truetype'),
+         url('../font/roboto-italic-webfont.svg#robotoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('../font/roboto-lightitalic-webfont.eot');
+    src: url('../font/roboto-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto-lightitalic-webfont.woff') format('woff'),
+         url('../font/roboto-lightitalic-webfont.ttf') format('truetype'),
+         url('../font/roboto-lightitalic-webfont.svg#robotolight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/roboto-regular-webfont.eot');
+    src: url('../font/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto-regular-webfont.woff') format('woff'),
+         url('../font/roboto-regular-webfont.ttf') format('truetype'),
+         url('../font/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../font/Roboto-Light-webfont.eot');
+    src: url('../font/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Light-webfont.woff') format('woff'),
+         url('../font/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../font/Roboto-Light-webfont.svg#RobotoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+	font-family: 'stevesfont';
+	src:url('../font/stevesfont.eot');
+	src:url('../font/stevesfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/stevesfont.woff') format('woff'),
+		url('../font/stevesfont.ttf') format('truetype'),
+		url('../font/stevesfont.svg#stevesfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.last{ margin-right: 0!important; padding-right: 0!important; }
+.first{ margin-left: 0!important; padding-left: 0!important; border-left: none!important; }
+.tableless, .tableless th, .tableless tr, .tableless td{
+	background: none!important;
+	border: none!important;
+	padding: 0px!important;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+* { background: transparent !important; color: #000 !important; box-shadow:none !important; text-shadow: none !important;}
+a, a:visited { text-decoration: underline; }
+a[href]:after { content: " (" attr(href) ")";}
+abbr[title]:after { content: " (" attr(title) ")"; }
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+img { max-width: 100% !important; page-break-inside: avoid; }
+
+@page { margin: 0.5cm; }
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3 { page-break-after: avoid; }
+}
+
+/* ==========================================================================
+   ODOMETER
+   ========================================================================== */
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  position: relative;
+}
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  *display: inline;
+}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+  *display: inline;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  *display: inline;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
+  display: block;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute;
+}
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+}
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  font-family: 'robotobold';
+  line-height: 1.1em;
+}
+.odometer.odometer-auto-theme .odometer-value, .odometer.odometer-theme-default .odometer-value {
+  text-align: center;
+}
+
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes swing { 
+    20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; } 
+    20% { -webkit-transform: rotate(15deg); } 
+    40% { -webkit-transform: rotate(-10deg); } 
+    60% { -webkit-transform: rotate(5deg); } 
+    80% { -webkit-transform: rotate(-5deg); } 
+    100% { -webkit-transform: rotate(0deg); } 
+} 
+@keyframes swing { 
+    20% { transform: rotate(15deg); } 
+    40% { transform: rotate(-10deg); } 
+    60% { transform: rotate(5deg); } 
+    80% { transform: rotate(-5deg); } 
+    100% { transform: rotate(0deg); } 
+} 
+.statistics ul li:hover .swing { 
+    -webkit-transform-origin: top center; 
+    transform-origin: top center; 
+    -webkit-animation-name: swing; 
+    animation-name: swing; 
+}
