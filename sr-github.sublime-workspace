@@ -1,0 +1,788 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dis",
+				"display"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"hi",
+				"hidden"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"pos",
+				"position"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 35108,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n	// If the indent level of a multi-line selection should be aligned\n	\"align_indent\": true,\n\n	// If indentation is done via tabs, set this to true to also align\n	// mid-line characters via tabs. This may cause alignment issues when\n	// viewing the file in an editor with different tab width settings. This\n	// will also cause multi-character operators to be left-aligned to the\n	// first character in the operator instead of the character from the\n	// \"alignment_chars\" setting.\n	\"mid_line_tabs\": false,\n\n	// The mid-line characters to align in a multi-line selection, changing\n	// this to an empty array will disable mid-line alignment\n	\"alignment_chars\": [\"=\"],\n\n	// If the following character is matched for alignment, insert a space\n	// before it in the final alignment\n	\"alignment_space_chars\": [\"=\"],\n\n	// The characters to align along with \"alignment_chars\"\n	// For instance if the = is to be aligned, there are a number of\n	// symbols that can be combined with the = to make an operator, and all\n	// of those must be kept next to the = for the operator to be parsed\n	\"alignment_prefix_chars\": [\n		\"+\", \"-\", \"&\", \"|\", \"<\", \">\", \"!\", \"~\", \"%\", \"/\", \"*\", \".\"\n	]\n}",
+			"file": "/Users/stevenreynolds_mac/Library/Application Support/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 1169,
+				"line_ending": "Unix",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "[\n	{ \"keys\": [\"super+ctrl+a\"], \"command\": \"alignment\" }\n]",
+			"file": "/Users/stevenreynolds_mac/Library/Application Support/Sublime Text 3/Packages/Alignment/Default (OSX).sublime-keymap",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 57,
+				"line_ending": "Unix",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 6566,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 30032,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 201.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"isnt",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 546.0
+	},
+	"console":
+	{
+		"height": 167.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/stevenreynolds_mac/Downloads/kodax/js/main.js",
+		"/Users/stevenreynolds_mac/Downloads/superslides-0.6.2/examples/touch.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/js/jquery.easing.1.3.js",
+		"/Users/stevenreynolds_mac/Downloads/superslides-0.6.2/examples/javascripts/hammer.min.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/js/jquery.specialevent.hammer.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/js/main.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/js/jquery.animate-enhanced.min.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/js/hammer.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/gallery.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/about.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/php.ini",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/index.html",
+		"/Users/stevenreynolds_mac/Downloads/kodax/js/jquery.animate-enhanced.min.js",
+		"/Users/stevenreynolds_mac/Downloads/kodax/js/jquery.easing.1.3.js",
+		"/Users/stevenreynolds_mac/Downloads/kodax/js/jquery.flexslider-min.js",
+		"/Users/stevenreynolds_mac/Downloads/kodax/js/jquery.specialevent.hammer.js",
+		"/Users/stevenreynolds_mac/Downloads/kodax/js/jquery.superslides.js",
+		"/Users/stevenreynolds_mac/Downloads/kodax/css/superslides.css",
+		"/Users/stevenreynolds_mac/Downloads/kodax/css/main.css",
+		"/Users/stevenreynolds_mac/Downloads/superslides-0.6.2/examples/javascripts/application.js",
+		"/Users/stevenreynolds_mac/Downloads/superslides-0.6.2/examples/javascripts/jquery.easing.1.3.js",
+		"/Users/stevenreynolds_mac/Downloads/superslides-0.6.2/examples/javascripts/jquery.animate-enhanced.min.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/css/main.css",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/css/superslides.css",
+		"/Users/stevenreynolds_mac/Downloads/kodax/index.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com/js/placeholder.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com v2.0/index.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/main.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com v2.0/components/js/main.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com v2.0/components/js/scripts.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/_main.scss",
+		"/Applications/Chromium.app/Contents/Info.plist",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com v2.0/components/css/styles.scss",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com v2.0/css/styles.css",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com v2.0/components/css/_normalize.scss",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com v2.0/js/scripts.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com v2.0/components/css/_main.scss",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com/css/main.css",
+		"/Volumes/Jail/Design Toolbox/Templates/selfy/Selfy Online/index.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/backstretch.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com/index.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/scripts.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/styles.scss",
+		"/Users/stevenreynolds_mac/Downloads/parallax-master/README.md",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/jquery.interactive_bg.js",
+		"/Users/stevenreynolds_mac/Downloads/parallax-master/source/jquery.parallax.js",
+		"/Users/stevenreynolds_mac/Downloads/interactive-background/css/default.css",
+		"/Users/stevenreynolds_mac/Downloads/interactive-background/index5.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/css/styles.css",
+		"/Users/stevenreynolds_mac/Downloads/kodax 2/js/jquery.superslides.js",
+		"/Volumes/Jail/Design Toolbox/Templates/selfy/Selfy Online/js/main.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com/gallery.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/js/scripts.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/jquery.fancybox.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/404.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/contact.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/jquery.fancybox.pack.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/mosaic.1.0.1.min.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/jquery.validationengine.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com/js/fancybox/source/jquery.fancybox.js",
+		"/Volumes/Jail/Design Toolbox/Templates/selfy/Selfy Online/js/placeholder.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com/js/fancybox/source/helpers/jquery.fancybox-thumbs.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/jquery.easing.1.3.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com/js/fancybox/source/jquery.fancybox.pack.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com/js/fancybox/source/jquery.fancybox.css",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.com/js/jquery.flexslider-min.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/jquery.fancybox-buttons.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/jquery.fancybox-media.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/jquery.fancybox-thumbs.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/_jquery.fancybox-buttons.scss",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/_jquery.fancybox.scss",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/_jquery.fancybox-thumbs.scss",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/odometer.min.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/_odometer.scss",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/_animate.scss",
+		"/Users/stevenreynolds_mac/Downloads/kodax 2/index.html",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/hisrc.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/contact.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/jquery.form.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/js/placeholder.js",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/_fonts.scss",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/styles.css",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/main.css",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/normalize.min.css",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/components/less/_mystyles.less",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/components/less/bootstrap.less",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/fonts.css",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/responsive.css",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/components/css/odometer.css",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/css/animate.css",
+		"/Volumes/Jail/Dropbox/Websites/stevenreynolds.github.io/js/backstretch.js",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/components/php/abouttheartists.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/components/js/_myscript.js",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/components/php/snippet-artistphotogrid.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/Ex_Files_Btsrp_AdvWebDev/Exercise Files/03_04/finished/rouxconferenceapp/_/components/js/_myscript.js",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/Ex_Files_Btsrp_AdvWebDev/Exercise Files/03_04/working folder/codesnippets.md",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/components/php/article-intro.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/components/php/snippit-carousel.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/Ex_Files_Btsrp_AdvWebDev/Exercise Files/03_03/working folder/codesnippets.md",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/artists.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/register.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/schedule.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/venuetravel.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/Ex_Files_Btsrp_AdvWebDev/Exercise Files/03_02/working folder/codesnippets.md",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/privacypolicy.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/Ex_Files_Btsrp_AdvWebDev/Exercise Files/03_01/working folder/codesnippets.md",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/about.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/.gitignore_global",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/components/php/footer.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/codekit-config.json",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/components/php/header.php",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/config.codekit",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/js/bootstrap.js",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/components/js/_bootstrap.js",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/js/myscript.js",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/Ex_Files_Btsrp_AdvWebDev/Exercise Files/02_05/finished/rouxconferenceapp/_/js/myscript.js",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/Ex_Files_Btsrp_AdvWebDev/Exercise Files/02_04/codesnippets.md",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/css/bootstrap.css",
+		"/Volumes/Jail/Training/Bootstrap 3 Advanced Web Development/working files/bootstrap3-training/_/css/mystyles.css",
+		"/Applications/Sublime Text.app/Contents/MacOS/Packages/Default.sublime-package",
+		"/Users/stevenreynolds_mac/“”",
+		"/Users/stevenreynolds_mac/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/stevenreynolds_mac/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/stevenreynolds_mac/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/stevenreynolds_mac/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Volumes/Windows/Users/StevenReynolds/AppData/Roaming/Sublime Text 2/Packages/User/Monokai Soda.tmTheme",
+		"/Volumes/Windows/Users/StevenReynolds/AppData/Roaming/Sublime Text 2/Packages/User/Emmet.sublime-settings",
+		"/Volumes/Windows/Users/StevenReynolds/AppData/Roaming/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"magnet",
+			"Protocols",
+			"protocol",
+			"li",
+			"masthead",
+			"scene",
+			"header",
+			"wrapper",
+			"clientX",
+			"pageX",
+			"fancybox",
+			"fancybox-overlay",
+			"slide",
+			"fancy",
+			"Easing",
+			"easing",
+			"speedTest",
+			"slides",
+			"');\n",
+			"\"",
+			"control",
+			"package"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6320,
+								6320
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3879.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/stevenreynolds_mac/Library/Application Support/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1169,
+								1169
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/stevenreynolds_mac/Library/Application Support/Sublime Text 3/Packages/Alignment/Default (OSX).sublime-keymap",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								57
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2120,
+								2120
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1106.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30032,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10437,
+								10442
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2822.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 51.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "sr-github.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"components/js/scripts.js"
+			],
+			[
+				"easing",
+				"components/js/jquery.easing.1.3.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -20,13 +20,13 @@ body {-webkit-font-smoothing: antialiased; font-smooth: always; text-shadow: 1px
 body{
    	background: #2F353E;  /* Background for Site */
 }
-html, button, input, select, textarea, a { 
+html, button, input, select, textarea, a {
 	color: #909EA4; /* General Body Text Color*/
 }
-.main ul li:before, h1 span, h2 span, h3 span, h4 span, .highlight, h5, h6, h1:after, h2:after, h3:after, .main-container a:hover, 
+.main ul li:before, h1 span, h2 span, h3 span, h4 span, .highlight, h5, h6, h1:after, h2:after, h3:after, .main-container a:hover,
 .more:before, ol > li:before, .cta a:hover, .error[generated=true], .footable.breakpoint > tbody > tr > td.expand:before, blockquote cite, ul.social-link a:hover, .fancybox-opened .fancybox-title a:hover{
 	color: #16AD99; /* Feature Color*/
-}   
+}
 a.btn, input[type=button], nav a.active, input[type=submit], #menu-icon{
 	background-color: #16AD99 ; /* Button Back Ground Color*/
 	color: #fff; /* Button Text Color*/
@@ -37,7 +37,7 @@ a.btn:hover, input[type=button]:hover, nav a:hover, input[type=submit]:hover, #m
 }
 h1, h2, h3, h4, .nav a, h1 a, h2 a, h3 a, h4 a, #response .success, .success:before, #response .failure{
 	color: #DDE6E9; /* Headings Color*/
-} 
+}
 strong, b, .lead, .main table th, blockquote, .more, .cta a{
 	color: #DDE6E9; /* Headings Color*/
 }
@@ -57,18 +57,25 @@ strong, b, .lead, .main table th, blockquote, .more, .cta a{
 
 /* ==========================================================================
    Logos
-   ========================================================================== */  
+   ========================================================================== */
 .logo{
 	max-width: 343px; /* Match logo size */
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
 }
 .logo-foot{
 	max-width: 145px; /* Match footer logo size */
 }
 
+.cbp-af-header-shrink .logo {
+	max-width: 280px;
+}
 
 
 
-	
 
 /* ==========================================================================
    Masthead Styles
@@ -93,7 +100,9 @@ strong, b, .lead, .main table th, blockquote, .more, .cta a{
 	content: none;
 }
 .cta{
+	position: relative;
 	margin-top: 18%;
+    margin-bottom: auto;
 	padding-bottom: 30px;
 	font-size: 18px;
 }
@@ -117,7 +126,7 @@ strong, b, .lead, .main table th, blockquote, .more, .cta a{
 .logo{
 	display: inline-block;
 	float: left;
-}   
+}
 .logo img, .logo-foot img{
 	width: 100%;
 }
@@ -152,8 +161,12 @@ strong, b, .lead, .main table th, blockquote, .more, .cta a{
 	-o-transition: all 250ms ease-in-out;
 	transition: all 250ms ease-in-out;
 }
-.tinynav { 
-	display: none; 
+
+.nav a:hover {
+	background-color: #16AD99;
+}
+.tinynav {
+	display: none;
 	width: 100%;
 	margin-top: .5em;
 	margin-bottom: .6em;
@@ -179,24 +192,36 @@ strong, b, .lead, .main table th, blockquote, .more, .cta a{
 	top: -2px;
 }
 #menu-icon span img{
-	width: 100%;	
+	width: 100%;
 }
 
 /* ==========================================================================
    Main Container General Layout Styles
    ========================================================================== */
 .header-container header{
+	position: absolute;
 	padding-top: 60px;
-	padding-top: 60px;
-	padding-bottom: 45px;
-	border-bottom: 1px solid #434952;
+	-webkit-transition: opacity 250ms ease-in-out;
+	-moz-transition: opacity 250ms ease-in-out;
+	-ms-transition: opacity 250ms ease-in-out;
+	-o-transition: opacity 250ms ease-in-out;
+	transition: opacity 250ms ease-in-out;
 }
 
 .header-container header .wrapper {
 	padding-top: 0px;
-	border-bottom: 1px solid #434952;
-	padding-bottom: 45px;
 	position: relative;
+}
+
+.header-container header.cbp-af-header-shrink {
+	background-color: #2F353E;
+	position: fixed;
+	min-height: 70px;
+	padding-top: 18px;
+}
+
+.header-container header.cbp-af-header-shrink .wrapper {
+	padding-bottom: 0;
 }
 
 .main-container{
@@ -210,6 +235,41 @@ strong, b, .lead, .main table th, blockquote, .more, .cta a{
 	width: 100%;
 	float: none;
 }
+
+#about.main-container{
+
+}
+
+
+
+.main-container #quote{
+	min-height: 280px;
+	width: 100%;
+	background: url(../img/bg-1.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-1.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-1.jpg', sizingMethod='scale')";
+}
+
+#gallery.main-container{
+
+}
+
+.main-container #contact{
+	width:100%;
+	height:100%;
+	background: url(../img/bg-1.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-1.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-1.jpg', sizingMethod='scale')";
+}
+
 .main-content img, .right-aside img{
 	max-width: 100%;width: 100%;
 	background: #16AD99;
@@ -255,18 +315,24 @@ img.no-border{
 	position:relative;
 	overflow:hidden;
 	background:#292D36 url(../img/progress.gif) no-repeat center center;
-	margin: 1em 0;
-	border: 5px solid #292D36;
+/*	margin: 1em 0;
+	border: 5px solid #292D36;*/
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	max-width: 100%;
 }
+
+.images_container .sevenths {
+	width: 14.28571428571429%;
+}
+
 .mosaic-block img{
 	margin: 0;
 	border: none;
 	width: 100%;
+	height: auto;
 }
 .mosaic-backdrop {
 	display:none;
@@ -274,7 +340,7 @@ img.no-border{
 	height:100%;
 	background:#292D36;
 }
-	
+
 .mosaic-overlay {
 	display:none;
 	z-index:5;
@@ -282,7 +348,7 @@ img.no-border{
 	width:100%;
 	height:100%;
 	background:#111;
-}		
+}
 .fade .mosaic-overlay {
 	background:url(../img/hover-magnify.png) no-repeat center center;
 	background-size: 49px 49px;
@@ -325,7 +391,7 @@ img.no-border{
 }
 }
 
-/* ============= Columns ===============*/ 
+/* ============= Columns ===============*/
 .half{
 	width: 47%;
 	margin-right: 6%;
@@ -333,7 +399,7 @@ img.no-border{
 }
 .third{
 	width: 30%;
-	margin-right: 5%;
+	/*margin-right: 5%;*/
 	float: left;
 }
 .fourths{
@@ -366,8 +432,8 @@ img.no-border{
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p{
 	word-wrap: break-word;
-}   
-h1, h2, h3, h4, h5, h6{ 
+}
+h1, h2, h3, h4, h5, h6{
 	font-weight: normal;
 	line-height: 100%;
 	letter-spacing: -1px;
@@ -404,9 +470,9 @@ h1:after, h2:after, h3:after{
 	position: relative;
 	padding-left: 3px;
 }
-em{ 
+em{
 	font-style: normal;
-	font-family: 'robotoitalic'; 
+	font-family: 'robotoitalic';
 }
 .lead, blockquote{
 	font-size: 24px;
@@ -428,14 +494,14 @@ blockquote cite{
 	margin-top: 0;
 }
 
-.main-container a{
-	-webkit-transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-ms-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	transition: all 250ms ease-in-out;
+/*.main-container a{
+	-webkit-transition: all 50ms ease-in-out;
+	-moz-transition: all 50ms ease-in-out;
+	-ms-transition: all 50ms ease-in-out;
+	-o-transition: all 50ms ease-in-out;
+	transition: all 50ms ease-in-out;
 	cursor: pointer;
-}
+}*/
 
 
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #434952; padding: 0; margin: 3em 0; }
@@ -470,10 +536,10 @@ blockquote, blockquote.right, blockquote.left{
 
 
 
-/* ============= Lists ===============*/   
+/* ============= Lists ===============*/
 .main ul, .main ol{
 	margin-bottom: 12px;
-}   
+}
 .main ul li, .more{
 	list-style-type: none;
 	line-height: 20px;
@@ -564,7 +630,7 @@ a.xsmall-btn{
 
 /* ============= Tables ===============*/
 .main table{
-	border: 1px solid #dde1e5;	
+	border: 1px solid #dde1e5;
 	text-align: left;
 	width: 100%;
 	background: #ffffff;
@@ -573,12 +639,12 @@ a.xsmall-btn{
 	padding: .5em;
 	border: 1px solid #dde1e5;
 	background-color: #ebedef;
-	vertical-align: top;	
+	vertical-align: top;
 }
 .main table td{
 	padding: .5em;
 	border: 1px solid #dde1e5;
-	vertical-align: top;	
+	vertical-align: top;
 }
 .main table tr:nth-child(2n+1){
 	background-color: #f8f8f8;
@@ -650,13 +716,11 @@ select, input[type=radio], input[type=checkbox] {
 /* ==========================================================================
    Footer Styles
    ========================================================================== */
-				
+
 footer .wrapper{
 	font-size: 14px;
 	color: #909EA4;
-	border-top: 1px solid #434952;
 	padding: 50px 0 50px;
-	margin-top: 20px;
 }
 .logo-foot{
 	display: inline-block;
@@ -666,7 +730,7 @@ ul.social-link li:before{
 	display: none;
 }
 ul.social-link li{
-	display: inline;	
+	display: inline;
 	padding: 0;
 }
 ul.social-link a{
@@ -703,7 +767,7 @@ ul.social-link a:hover{
 .statistics ul li{
 	display: table-cell;
 	text-align: center;
-	border-right: 1px solid #434952; 
+	border-right: 1px solid #434952;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -718,20 +782,20 @@ ul.social-link a:hover{
 .statistics li h4{
 	font-family: 'stevesfont';
 	font-size: 60px;
-	color: #16AD99; 
+	color: #16AD99;
 	font-weight: normal;
 	margin-bottom: .2em;
 }
 .statistics li h5{
 	font-size: 48px;
-	color: #909EA4; 
+	color: #909EA4;
 	font-family: 'robotobold';
 	letter-spacing: -1px;
 	font-weight: normal;
 	margin: 0;
 }
 .statistics li h6{
-	color: #DDE6E9; 
+	color: #DDE6E9;
 	font-size: 18px;
 	font-weight: normal;
 	font-family: 'RobotoLight';
@@ -763,8 +827,6 @@ ul.social-link a:hover{
 }
 
 ul.filters{
-	border-bottom: 1px solid #434952;
-	border-top: 1px solid #434952;
 	margin-top: 2.5em;
 	margin-bottom: 2em;
 	text-align: center;
@@ -778,18 +840,22 @@ ul.filters li{
 	border-right: 1px solid #434952;
 	padding-right: 1.2em;
 }
+ul.filters a {
+	font-size: 18px;
+	font-family: 'robotobold_condensed';
+}
 ul.filters li:last-child{
 	border: none;
 	margin-right: 0;
 }
 ul.filters li.active a{
-	color: #16AD99; 
+	color: #16AD99;
 }
 
 /* ==========================================================================
    Media Queries 480
    ========================================================================== */
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
 	 input[type=text],  input[type=email], input[type=password], textarea, a.btn, input[type=button], input[type=submit]{
 		padding: 10px 2%;
 		width: 96%;
@@ -842,7 +908,7 @@ ul.filters li.active a{
 /* ==========================================================================
    Media Queries 600
    ========================================================================== */
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 600px) {
 
 	.logo{
 		float: none;
@@ -857,7 +923,6 @@ ul.filters li.active a{
 	#nav{
 		padding-left: 0;
 		padding-right: 0;
-		width: 100%!important;
 		left: 0;
 	}
 	#nav li{
@@ -877,10 +942,7 @@ ul.filters li.active a{
 		padding-right: 3%!important;
 		width: 94%!important;
 	}
-	
-	.backstretch{
-		opacity: 0.2;
-	}
+
 	.cta.two-third{
 		width: 100%;
 		margin-right: 0%;
@@ -890,14 +952,14 @@ ul.filters li.active a{
 	.statistics li h5 {
 		font-size: 38px;
 	}
-	
+
 	/* ============= Tables ===============*/
-		.main table{ 
+		.main table{
 			border-left: 1px solid #cad2d7;
 			border-right: 1px solid #cad2d7;
 			border-top: none;
 			border-bottom: none;
-		}	
+		}
 }
 
 
@@ -910,12 +972,12 @@ ul.filters li.active a{
 		display: block;
 		height: 100%;
 	}
-	
+
 	/* ============= Main Container General Layout Styles===============*/
 	.header-container header{
 		padding: 30px 0 25px;
 		text-align: left;
-	} 
+	}
 	.main-content, .right-aside{
 		width: 100%;
 		float: none;
@@ -928,13 +990,13 @@ ul.filters li.active a{
 	}
 	.right-aside{
 		border-top: 1px solid #434952;
-		margin-top: 25px; 
+		margin-top: 25px;
 	}
 
 
 
-	/* ============= Columns ===============*/ 
-	.third, .half, .fourths, .two-third, ol.icon-lists li, ul.flag-lists li, .three-fourths, .foot.left, .foot.right{
+	/* ============= Columns ===============*/
+	.third, .half, .fourths, .sevenths, .two-third, ol.icon-lists li, ul.flag-lists li, .three-fourths, .foot.left, .foot.right{
 		width: 100%;
 		margin-right: 0%;
 		float: none;
@@ -942,6 +1004,10 @@ ul.filters li.active a{
 	.third, .half, .fourths, .two-third, .three-fourths{
 		margin-bottom: 30px;
 	}
+	.images_container .sevenths {
+	width: 50%;
+	}
+
 	blockquote.third, blockquote.half, blockquote.fourths, blockquote.two-third{
 		width: 100%;
 	}
@@ -962,19 +1028,19 @@ ul.filters li.active a{
 	.statistics li h6 {
 		font-size: 16px;
 	}
-	
+
  }
- 
+
  /* ==========================================================================
    Media Queries 868
    ========================================================================== */
-@media only screen and (max-width: 853px) { 
+@media only screen and (max-width: 853px) {
 
 	.header-container nav{
 		text-align: left;
 	}
-	#nav{ 
-		display: none; 
+	#nav{
+		display: none;
 	}
 	#nav {
 		clear: both;
@@ -983,7 +1049,7 @@ ul.filters li.active a{
 		min-width: 160px;
 		z-index: 10000;
 		padding: 0;
-		display: none; 
+		display: none;
 		right: 0px;
 		background: #5D6B80;
 		-webkit-border-radius: 3px 0px 3px 3px;
@@ -1038,23 +1104,23 @@ ul.filters li.active a{
 
 /* ==========================================================================
    Media Queries 1024
-   ========================================================================== */  
+   ========================================================================== */
 
-@media only screen and (max-width: 1024px) { 
+@media only screen and (max-width: 1024px) {
 	.cta h1 { font-size: 80px;}
 	#slides .cta {margin-top: 100px;}
 }
-@media only screen and (max-width: 968px) { 
+@media only screen and (max-width: 968px) {
 	.cta h1 { font-size: 64px;}
 }
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
 	.cta h1 { font-size: 40px;}
 }
 
 /* ==========================================================================
    Media Queries 1140
-   ========================================================================== */  
-@media only screen and (max-width: 1140px) { 
+   ========================================================================== */
+@media only screen and (max-width: 1140px) {
 	.wrapper { width: 92%; margin: 0 4%; }
 }
 
@@ -1065,7 +1131,7 @@ ul.filters li.active a{
 /* ==========================================================================
    FONTS
    ========================================================================== */
-   
+
 @font-face {
     font-family: 'aleoitalic';
     src: url('../font/aleo-italic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -1348,31 +1414,32 @@ h2, h3 { page-break-after: avoid; }
   text-align: center;
 }
 
-.animated { 
-    -webkit-animation-duration: 1s; 
-    animation-duration: 1s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-} 
 
-@-webkit-keyframes swing { 
-    20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; } 
-    20% { -webkit-transform: rotate(15deg); } 
-    40% { -webkit-transform: rotate(-10deg); } 
-    60% { -webkit-transform: rotate(5deg); } 
-    80% { -webkit-transform: rotate(-5deg); } 
-    100% { -webkit-transform: rotate(0deg); } 
-} 
-@keyframes swing { 
-    20% { transform: rotate(15deg); } 
-    40% { transform: rotate(-10deg); } 
-    60% { transform: rotate(5deg); } 
-    80% { transform: rotate(-5deg); } 
-    100% { transform: rotate(0deg); } 
-} 
-.statistics ul li:hover .swing { 
-    -webkit-transform-origin: top center; 
-    transform-origin: top center; 
-    -webkit-animation-name: swing; 
-    animation-name: swing; 
+/* ==========================================================================
+   on scoll fadeIn
+   ========================================================================== */
+
+
+/* Initial state (hidden or anything else) */
+.cbp-so-init .cbp-so-side {
+    opacity: 0;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
 }
+
+.cbp-so-init .cbp-fadeIn {
+    -webkit-transition: opacity .50s ease-in-out;
+    -moz-transition: opacity .50s ease-in-out;
+    transition: opacity .50s ease-in-out;
+}
+
+/* Animated state */
+/* add you final states (transition) or your effects (animations) for each side */
+.cbp-so-section.cbp-so-animate .cbp-fadeIn {
+    -webkit-transition: opacity .50s ease-in-out;
+    -moz-transition: opacity .50s ease-in-out;
+    transition: opacity .50s ease-in-out;
+    opacity: 1;
+}
+
