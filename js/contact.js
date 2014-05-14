@@ -10,7 +10,7 @@ $(function() {
   		error.wrap("<tr class='error'></tr>");
 
   	},
-  	
+
   	// Add requirements to each of the fields
   	rules: {
   		name: {
@@ -26,7 +26,7 @@ $(function() {
   			minlength: 10
   		}
   	},
-  	
+
   	// Specify what error messages to display
   	// when the user does something horrid
   	messages: {
@@ -43,10 +43,9 @@ $(function() {
   			minlength: jQuery.format("At least {0} characters required.")
   		}
   	},
-  	
+
   	// Use Ajax to send everything to processForm.php
   	submitHandler: function(form) {
-  		$("#send").attr("value", "Sending...");
   		$(form).ajaxSubmit({
   			success: function(responseText, statusText, xhr, $form) {
   				$(form).slideUp("fast");
