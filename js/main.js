@@ -192,44 +192,30 @@ GALLERY FILTER MENU
 /*************************************************************
 ODOMETER
 *************************************************************/
-            // jQuery(window).load(function($){
+            jQuery(window).load(function($){
 
-            // setTimeout(function(){
-            //     coffeeodometer.innerHTML = 16;
-            // }, 500);
+            setTimeout(function(){
+                coffeeodometer.innerHTML = 16;
+            }, 500);
 
-            // setTimeout(function(){
-            //     gameodometer.innerHTML = 10;
-            // }, 1000);
+            setTimeout(function(){
+                gameodometer.innerHTML = 10;
+            }, 1000);
 
-            // setTimeout(function(){
-            //     musicodometer.innerHTML = 236;
-            // }, 1500);
+            setTimeout(function(){
+                musicodometer.innerHTML = 236;
+            }, 1500);
 
-            // setTimeout(function(){
-            //     photoodometer.innerHTML = 16;
-            // }, 2000);
+            setTimeout(function(){
+                photoodometer.innerHTML = 16;
+            }, 2000);
 
-            // setTimeout(function(){
-            //     bikeodometer.innerHTML = 42;
-            // }, 2500);
+            setTimeout(function(){
+                bikeodometer.innerHTML = 42;
+            }, 2500);
 
-            //  });
+             });
 
-
-
-var lastWasLower = false;
-
-$(document).scroll(function(){
-  if ($(document).scrollTop() > 1600){
-    if (!lastWasLower)
-      $('#coffeeodometer').html(16);
-
-    lastWasLower = true;
-  } else {
-    lastWasLower = false;
-  }
-});
 
 
 /*************************************************************
