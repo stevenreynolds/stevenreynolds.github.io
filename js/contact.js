@@ -44,15 +44,5 @@ $(function() {
   		}
   	},
 
-  	// Use Ajax to send everything to processForm.php
-  	submitHandler: function(form) {
-  		$(form).ajaxSubmit({
-  			success: function(responseText, statusText, xhr, $form) {
-  				$(form).slideUp("fast");
-  				$("#response").html(responseText).hide().slideDown("fast");
-  			}
-  		});
-  		return false;
-  	}
   });
 });
