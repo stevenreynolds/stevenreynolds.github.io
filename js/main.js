@@ -23,7 +23,6 @@ jQuery(document).ready(function($) {
 
         }
 
-
     });
 
 /*************************************************************
@@ -52,6 +51,8 @@ $(document).ready(function() {
                 break;
         };
     });
+
+    new WOW().init();
 
 // Responsive Menu.js
     $('#nav-wrap').prepend('<div id="menu-icon"><span><img src="img/hamburger@2x.png"/></span>Menu</div>');

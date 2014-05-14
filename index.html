@@ -13,27 +13,21 @@
 
         <meta name="description" content="My name is Steven Reynolds and I love crafting the web, I specialise in clean, user-friendly, grid based websites with a focus on simplicity, usability and a touch of ZEN.">
 
-        <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-
-        <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
-        <link rel="stylesheet" type="text/css" href="css/superslides.css">
-        <link rel="stylesheet" type="text/css" href="css/flexslider.css">
-        <link rel="stylesheet" type="text/css" href="css/style_isotope.css">
-
         <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css">
+
     </head>
-    <body class="cbp-so-scroller" id="cbp-so-scroller">
+    <body>
 
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
 
     <div class="header-container" id="slides">
-        <header class="cbp-af-header">
-            <div class="wrapper clearfix fadeInDown cbp-af-inner">
+        <header class="cbp-af-header animated fadeInDown">
+            <div class="wrapper clearfix">
                 <a href="index.html" class="logo"><img src="img/logo@2x.png" alt="Logo" /></a>
 
 
@@ -96,17 +90,15 @@
                 <!-- Start Main Content -->
                 <div class="main-content full">
                     <div class="clearfix">
-                       <div class="clearfix center cbp-so-section">
-                            <div class="cbp-so-side cbp-fadeIn">
+                       <div class="clearfix wow fadeInRightBig">
                             <!-- Headings -->
                             <h1>About Me</h1>
                             <p class="lead">How I spend my time will help give you get a better understanding about myself.</p>
-                            </div>
                         </div>
 
                         <!-- Statistics -->
-                        <div class="statistics cbp-so-section">
-                                    <ul class="clearfix cbp-so-side cbp-fadeIn">
+                        <div class="statistics wow bounceIn">
+                                    <ul class="clearfix">
                                                                                         <li>
                                                     <h4 class="animated">b</h4>
                                                     <h5 id="coffeeodometer" class="odometer">0</h5>
@@ -139,8 +131,8 @@
                         <hr>
 
                          <!-- Columns Halves -->
-                        <div class="clearfix cbp-so-section">
-                        <div class="half cbp-so-side cbp-fadeIn">
+                        <div class="clearfix">
+                        <div class="half wow fadeInLeft">
                         <div class="half left">
                             <img class="nomarg" alt="Steven Reynolds Photo" src="img/about-steven-th.jpg"></div>
 
@@ -150,7 +142,7 @@
 
                         </div>
 
-                        <div class="half last cbp-so-side cbp-fadeIn">
+                        <div class="half last wow fadeInRight">
                             <p>I&apos;m naturally a tech geek and loves anything to do with computers and devices. When I&apos;m not pushing pixels and learning all there is about the web you can find me traveling around Asia, learning Japanese and dabbling in photography.<br><br>
 
                             <span class="highlight">Fun Facts:</span> Constantly trying make it better / loves exploring / obsessed with details &amp; typography (not enough padding drives me crazy) / Inspired by all forms of design / hates IE / keen eye for simplicity / big advocate for web standards / has a crush on responsive design / middle name is Robert</p>
@@ -174,8 +166,8 @@
 
 
                         <!-- Start Quotes-->
-                        <div class="flexslider-quote cbp-so-section">
-                            <ul class="slides cbp-so-side cbp-fadeIn">
+                        <div class="flexslider-quote wow fadeInUp">
+                            <ul class="slides">
                                 <li><blockquote>The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.<cite>- Paul Rand</cite> </blockquote></li>
 
                                 <li><blockquote>Simplicity is the ultimate sophistication.<cite>- Leonardo da Vinci</cite> </blockquote></li>
@@ -202,20 +194,19 @@
                 <!-- Start Main Content -->
                 <div class="main-content full">
                     <div class="clearfix">
-                    <div class="cbp-so-section" id="gallery">
-                        <div class="cbp-so-side cbp-fadeIn">
-                        <div class="clearfix center">
-                        <h2>My Work</h2>
+                    <div id="gallery">
+                        <div class="clearfix wow fadeInRightBig">
+                        <h1>My Work</h2>
                         <p class="lead">A collection of designs I am proud off.</p>
                         </div>
 
                         <!-- FILTERMENU -->
-                        <ul class="filters">
+                        <ul class="filters wow fadeInUp">
                             <li><a href="#">Show all</a></li>
                             <li class="cat-item web-cat"><a href="#" title="View only web design work">Web</a></li>
                             <li class="cat-item logo-cat"><a href="#" title="View only logo design work">Logo</a></li>
                         </ul>
-                        </div>
+
                     </div>
                     </div>
                 </div>
@@ -224,7 +215,7 @@
             <div class="main-content full">
                 <div class="clearfix">
                         <!-- IMAGES CONTAINER -->
-                        <div class="images_container">
+                        <div class="images_container wow fadeInUp">
 
                             <!-- MAIN LOOP -->
 
@@ -293,9 +284,9 @@
 
 
         <!-- Start Main Body -->
-        <div class="main-container cbp-so-section">
+        <div class="main-container">
             <div id="contact">
-            <div class="main wrapper clearfix cbp-so-side cbp-fadeIn">
+            <div class="main wrapper clearfix">
 
 
                 <!-- Start Main Content -->
@@ -303,13 +294,14 @@
                     <div class="clearfix">
 
                         <!-- Headings -->
+                        <div class="wow fadeInLeftBig">
                         <h1>Contact Me</h1>
                         <p class="lead">Drop me a line if you're interested in working together!</p>
 
                             <p class="">I'm able to work on small projects at the moment. A brochure design here, logo there, perhaps a small corporate website, or even a website for your small restaurant, just shoot me an email even if you just want to say Hi.</p>
+                        </div>
 
-
-                        <form id="contactform" action="http://forms.brace.io/steven@stevenreynolds.com" method="post">
+                        <form id="contactform" class="wow fadeInLeftBig" action="http://forms.brace.io/steven@stevenreynolds.com" method="post">
                             <table width="100%" class="tableless">
                                 <tr><td><input type="text" id="name" name="name" placeholder="What's your name" autofocus /></td></tr>
                                 <tr><td><input type="email" id="email" name="email" placeholder="Email goes here" /></td></tr>
@@ -327,7 +319,7 @@
 
 
                  <!-- Start Main Sidebar -->
-                <aside class="right-aside">
+                <aside class="right-aside wow fadeInRightBig">
                     <h2>Networks</h2>
                     <ul>
                         <li><a href="https://www.facebook.com/sdlonyernevets" target="_blank">Follow me on Facebook</a></li>
@@ -350,8 +342,8 @@
         </div> <!-- #main-container -->
 
 		<!-- Start Footer -->
-        <footer class="cbp-so-section">
-            <div class="main wrapper clearfix cbp-so-side cbp-fadeIn">
+        <footer>
+            <div class="main wrapper clearfix wow fadeInUp">
                 <div class="foot right">
                     <ul class="social-link">
                         <li><a href="https://www.facebook.com/sdlonyernevets" target="_blank" title="Follow Me on Facebook">g</a></li>
@@ -374,6 +366,10 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
 
+        <script src="js/jquery.loadie.min.js"></script>
+        <script type="text/javascript">$('body').loadie();</script>
+        <style type="text/css">.loadie { z-index: 9999; }</style>
+
         <script type="text/javascript" src="js/hisrc.js"></script>
         <script>
         $.hisrc.speedTest({ speedTestUri: '50K.jpg' });
@@ -384,36 +380,31 @@
         })
         </script>
 
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/jquery.superslides.js"></script>
-        <script type="text/javascript" src="js/hammer.js"></script>
-        <script type="text/javascript" src="js/jquery.specialevent.hammer.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.superslides.js"></script>
+        <script src="js/hammer.js"></script>
+        <script src="js/jquery.specialevent.hammer.js"></script>
 
-        <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-        <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
-        <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-        <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-        <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+        <script src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+        <script src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+        <script src="js/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+        <script src="js/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+        <script src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
 
 
-        <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-        <script type="text/javascript" src="js/mosaic.1.0.1.min.js"></script>
-        <script type="text/javascript" src="js/odometer.min.js"></script>
-        <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-        <script type="text/javascript" src="js/classie.js"></script>
-        <script type="text/javascript" src="js/cbpScroller.js"></script>
-        <script type="text/javascript" src="js/jquery.lazyload.js"></script>
-        <script type="text/javascript" src="js/contact.js"></script>
-        <script type="text/javascript" src="js/jquery.form.js"></script>
-        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-        <script type="text/javascript" src="js/jquery.validationengine.js"></script>
-        <script type="text/javascript" src="js/placeholder.js"></script>
-        <script type="text/javascript" src="js/cbpAnimatedHeader.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-
-        <script>
-        new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
-        </script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/mosaic.1.0.1.min.js"></script>
+        <script src="js/odometer.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.validationengine.js"></script>
+        <script src="js/placeholder.js"></script>
+        <script src="js/cbpAnimatedHeader.js"></script>
+        <script src="js/main.js"></script>
 
         <!-- Start Google Analytics-->
         <script>

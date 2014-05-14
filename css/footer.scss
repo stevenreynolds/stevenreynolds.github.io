@@ -1,0 +1,29 @@
+footer .wrapper{
+    font-size: 14px;
+    color: #909EA4;
+    padding: 50px 0 50px;
+}
+.logo-foot{
+    display: inline-block;
+    padding-right: 5px;
+}
+ul.social-link li:before{
+    display: none;
+}
+ul.social-link li{
+    display: inline;
+    padding: 0;
+}
+ul.social-link a{
+     font-family: 'stevesfont';
+     font-size: 40px;
+     -webkit-transition: all 250ms ease-in-out;
+     -moz-transition: all 250ms ease-in-out;
+     -ms-transition: all 250ms ease-in-out;
+     -o-transition: all 250ms ease-in-out;
+     transition: all 250ms ease-in-out;
+     opacity: .35;
+}
+ul.social-link a:hover{
+    opacity: 1;
+}
