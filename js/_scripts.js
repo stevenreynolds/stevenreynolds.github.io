@@ -13,6 +13,7 @@
 // @codekit-prepend "jquery.flexslider-min.js"
 // @codekit-prepend "classie.js"
 // @codekit-prepend "wow.min.js"
+// @codekit-prepend "contact.js"
 // @codekit-prepend "jquery.form.js"
 // @codekit-prepend "jquery.validate.min.js"
 // @codekit-prepend "jquery.validationengine.js"
