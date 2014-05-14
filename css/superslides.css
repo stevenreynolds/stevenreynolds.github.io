@@ -108,20 +108,10 @@
 	.slides-navigation a.next {
 	  right: 0;
 	}
-	#slides .cta{
-		margin-top: 250px;
-	}
-	#slides .cta.half{
-		width: 60%;
-	}
 }
 @media only screen and (max-width: 600px) {
 	.slide-img{
 		opacity: .2;
-	}
-	#slides .cta.half{
-		width: 100%;
-		margin-right: 0;
 	}
 
 }

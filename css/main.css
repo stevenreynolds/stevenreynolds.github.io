@@ -99,13 +99,20 @@ strong, b, .lead, .main table th, blockquote, .more, .cta a{
 .cta h1:after, .cta h2:after, .cta h3:after {
 	content: none;
 }
-.cta{
-	position: relative;
-	margin-top: 18%;
-    margin-bottom: auto;
-	padding-bottom: 30px;
+.cta {
+	width: 600px;
+	left:0;
+	position: absolute;
+	padding: 10px 0 70px;
 	font-size: 18px;
 }
+
+#slides .wrapper {
+margin: 0 auto 30px auto;
+position: relative;
+top: 30%;
+}
+
 .cta a{
 	-webkit-transition: all 250ms ease-in-out;
 	-moz-transition: all 250ms ease-in-out;
@@ -201,11 +208,11 @@ strong, b, .lead, .main table th, blockquote, .more, .cta a{
 .header-container header{
 	position: absolute;
 	padding-top: 60px;
-	-webkit-transition: opacity 250ms ease-in-out;
-	-moz-transition: opacity 250ms ease-in-out;
-	-ms-transition: opacity 250ms ease-in-out;
-	-o-transition: opacity 250ms ease-in-out;
-	transition: opacity 250ms ease-in-out;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
 }
 
 .header-container header .wrapper {
@@ -1107,14 +1114,16 @@ ul.filters li.active a{
    ========================================================================== */
 
 @media only screen and (max-width: 1024px) {
-	.cta h1 { font-size: 80px;}
-	#slides .cta {margin-top: 100px;}
+	.cta h1 {font-size: 80px;}
+	#slides .cta {width: 445px;}
 }
 @media only screen and (max-width: 968px) {
-	.cta h1 { font-size: 64px;}
+	.cta h1 {font-size: 70px;}
+	#slides .cta {width: 445px;}
 }
 @media only screen and (max-width: 480px) {
-	.cta h1 { font-size: 40px;}
+	.cta h1 {font-size: 50px;}
+	#slides .cta {width: 100%;}
 }
 
 /* ==========================================================================
