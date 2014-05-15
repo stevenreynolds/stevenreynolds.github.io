@@ -79,6 +79,11 @@ $(document).ready(function() {
   // Mosaic.js
     $('.fade').mosaic();
 
+    // hide overlay when load is finish
+    Pace.on('hide', function () {
+    $('.overlay').css("display", "none");
+    });
+
 
 });
 

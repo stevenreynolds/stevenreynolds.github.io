@@ -1,3 +1,4 @@
+// @codekit-prepend "pace.min.js"
 // @codekit-prepend "jquery.easing.1.3.js"
 // @codekit-prepend "jquery.superslides.js"
 // @codekit-prepend "hammer.js"
