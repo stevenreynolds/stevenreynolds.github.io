@@ -12,7 +12,7 @@
   -o-perspective: 12rem;
   perspective: 12rem;
 
-  z-index: 2000;
+  z-index: 9999999999;
   position: fixed;
   height: 6rem;
   width: 6rem;
@@ -39,10 +39,9 @@
   line-height: 6rem;
   font-size: 2rem;
   border-radius: 50%;
-  background: rgba(0, 197, 154, 0.8);
+  background: #16AD99;
   color: #fff;
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 100;
+  font-family: 'RobotoLight';
   text-align: center;
 
   -webkit-animation: pace-3d-spinner linear infinite 2s;
@@ -106,4 +105,16 @@
   to {
     transform: rotateY(360deg);
   }
+}
+
+.overlay {
+  position: fixed!important;
+  background: #2F353E;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
