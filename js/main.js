@@ -1,29 +1,40 @@
+
+// INSTANTIATE VARIABLES
+
+var isActive;
+var screenHeight = $(window).height();
+var screenWidth = $(window).width();
+
+function init () {
+
+    // PAGE SETUP
+    setSectionHeights();
+
+    // WINDOW RESIZING HANDLER
+    $(window).resize(function(){
+        setSectionHeights();
+    });
+
+}
+
+
+// PAGE SETUP
+function setSectionHeights() {
+
+    screenHeight = $(window).height();
+    $('#slides, #slides .container').css('height', screenHeight);
+}
+
+
+
+
+
+$(window).stellar();
+
 /*************************************************************
-SUPERSLIDES NAV
+header resize
 *************************************************************/
 
-jQuery(document).ready(function($) {
-
-        if ($('nav.slides-navigation').size() > 0) {
-
-            var $slidesNavigation = $('nav.slides-navigation');
-            $slidesNavigation.hide();
-
-            //on masthead hover
-            $('.slides-container').hover(function () {
-                $slidesNavigation.fadeIn();
-            }, function() {
-                $slidesNavigation.hide();
-            });
-
-            //on masthead hover
-            $slidesNavigation.hover(function () {
-                $slidesNavigation.show();
-            });
-
-        }
-
-    });
 
 /*************************************************************
 main.js
@@ -31,26 +42,6 @@ main.js
 
 $(document).ready(function() {
 
-    // Superslides.js
-    $('#slides').superslides({
-        play: true,
-        slide_easing: 'easeInOutCubic',
-        slide_speed: 800,
-        delay: 6500,
-        pagination: true
-    });
-
-    $('#slides').on('dragstart', function (event) {
-        event.preventDefault();
-        switch(event.direction){
-            case "left":
-                $('#slides').superslides.api.next();
-                break;
-            case "right":
-                $('#slides').superslides.api.prev();
-                break;
-        };
-    });
 
     new WOW().init();
 
