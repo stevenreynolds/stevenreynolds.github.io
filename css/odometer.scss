@@ -1,7 +1,6 @@
 .statistics{
   display: table;
   width: 100%;
-  margin-top: 1.5em;
 }
 .statistics ul{
   display: table-row;
@@ -9,7 +8,6 @@
 .statistics ul li{
   display: table-cell;
   text-align: center;
-  border-right: 1px solid #434952;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -30,7 +28,7 @@
 }
 .statistics li h5{
   font-size: 48px;
-  color: #909EA4;
+  color: #DDE6E9;
   font-family: 'robotobold';
   letter-spacing: -1px;
   font-weight: normal;

@@ -1,4 +1,4 @@
-/* ==========================================================================
+        /* ==========================================================================
    Media Queries 480
    ========================================================================== */
 @media only screen and (max-width: 480px) {
@@ -8,9 +8,14 @@
     }
 
     .logo {
-        max-width: 68px;
+        max-width: 70px;
         overflow: hidden;
     }
+
+    .cbp-af-header-shrink .logo {
+        max-width: 50px;
+    }
+
     .logo img {
         width: 343px;
     }
@@ -46,6 +51,9 @@
    ========================================================================== */
 @media only screen and (max-width: 600px) {
 
+
+
+
     .main-content img{
         width: 100%;
     }
@@ -67,6 +75,7 @@
             border-top: none;
             border-bottom: none;
         }
+
 }
 
 
@@ -74,11 +83,6 @@
    Media Queries 768
    ========================================================================== */
 @media only screen and (max-width: 768px) {
-
-    #masthead{
-        display: block;
-        height: 100%;
-    }
 
     /* ============= Main Container General Layout Styles===============*/
     .header-container header{
@@ -100,6 +104,11 @@
         margin-top: 25px;
     }
 
+    .main-container .counter, .main-container .quote {
+        background-attachment: scroll!important;
+        background-position: center top !important;
+    }
+
 
 
     /* ============= Columns ===============*/
@@ -115,12 +124,6 @@
     width: 50%;
     }
 
-    blockquote.third, blockquote.half, blockquote.fourths, blockquote.two-third{
-        width: 100%;
-    }
-    blockquote, blockquote.right, blockquote.left{
-        margin: 0;
-    }
     .foot.left, .foot.right{
         display: block;
         text-align: center;
@@ -214,16 +217,37 @@
    ========================================================================== */
 
 @media only screen and (max-width: 1024px) {
+
     .cta h1 {font-size: 80px;}
-    #slides .cta {width: 445px;}
+    #intro .cta {width: 445px;}
+
+    .header-container{
+    background: url(../img/intro-medium.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/slide1-medium', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/slide1-medium', sizingMethod='scale')";
+    }
 }
 @media only screen and (max-width: 968px) {
     .cta h1 {font-size: 70px;}
-    #slides .cta {width: 445px;}
+    #intro .cta {width: 445px;}
 }
+
 @media only screen and (max-width: 480px) {
     .cta h1 {font-size: 50px;}
-    #slides .cta {width: 100%;}
+    #intro .cta {width: 100%;}
+    .header-container{
+    background: url(../img/intro-small.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/slide1-medium', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/slide1-medium', sizingMethod='scale')";
+    }
 }
 
 /* ==========================================================================

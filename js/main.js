@@ -1,3 +1,4 @@
+$ = jQuery;
 
 // INSTANTIATE VARIABLES
 
@@ -17,23 +18,18 @@ function init () {
 
 }
 
-
 // PAGE SETUP
 function setSectionHeights() {
 
     screenHeight = $(window).height();
-    $('#slides, #slides .container').css('height', screenHeight);
+    $('#intro, #intro .container').css('height', screenHeight);
 }
 
 
-
-
-
-$(window).stellar();
-
-/*************************************************************
-header resize
-*************************************************************/
+$(window).stellar({
+    horizontalScrolling: false,
+  verticalScrolling: true,
+});
 
 
 /*************************************************************
@@ -41,7 +37,6 @@ main.js
 *************************************************************/
 
 $(document).ready(function() {
-
 
     new WOW().init();
 
@@ -76,32 +71,10 @@ $(document).ready(function() {
     });
 
 
-});
-
-/*************************************************************
-FLEXSLIDER INIT
-*************************************************************/
-jQuery(window).load(function($){
-$ = jQuery;
-
-$('.flexslider-quote').flexslider({
-        slideshow: true,
-        slideshowSpeed: 7000,
-        animationSpeed: 600,
-        animation: "fade",
-        smoothHeight: true,
-        touch: true,
-        directionNav: false
-    });
-  });
-
-
 /*************************************************************
 ISOTOPE INIT
 *************************************************************/
 
-jQuery(window).load(function($) {
-    $=jQuery;
     if ($('.images_container').size() > 0) {
         $('.images_container').isotope({
             itemSelector: '.gallery_item',
@@ -134,13 +107,10 @@ jQuery(window).load(function($) {
     });
     });
 
-});
-
 /*************************************************************
 GALLERY FILTER MENU
 *************************************************************/
 
-    jQuery(document).ready(function($) {
         if ($('.filters li').size() > 0) {
 
             //apply active class to first menu item (show all)
@@ -181,36 +151,69 @@ GALLERY FILTER MENU
                 }
             });
 
-        }
-    });
 
 
 /*************************************************************
-ODOMETER
+COUNTER
 *************************************************************/
-            jQuery(window).load(function($){
 
-            setTimeout(function(){
-                coffeeodometer.innerHTML = 16;
-            }, 500);
+    jQuery('#coffeeodometer').appear(function() {
+        $('#coffeeodometer').countTo({
+            from: 0,
+            to: 16,
+            speed: 4000,
+            refreshInterval: 50,
+            onComplete: function(value) {
+            //console.debug(this);
+            }
+            });
+        });
 
-            setTimeout(function(){
-                gameodometer.innerHTML = 10;
-            }, 1000);
+    jQuery('#gameodometer').appear(function() {
+        $('#gameodometer').countTo({
+            from: 0,
+            to: 10,
+            speed: 4000,
+            refreshInterval: 50,
+            onComplete: function(value) {
+            //console.debug(this);
+            }
+            });
+        });
+    jQuery('#musicodometer').appear(function() {
+         $('#musicodometer').countTo({
+            from: 0,
+            to: 236,
+            speed: 4000,
+            refreshInterval: 50,
+            onComplete: function(value) {
+            //console.debug(this);
+            }
+            });
+        });
+    jQuery('#photoodometer').appear(function() {
+         $('#photoodometer').countTo({
+            from: 0,
+            to: 16,
+            speed: 4000,
+            refreshInterval: 50,
+            onComplete: function(value) {
+            //console.debug(this);
+            }
+            });
+        });
+    jQuery('#bikeodometer').appear(function() {
+         $('#bikeodometer').countTo({
+            from: 0,
+            to: 42,
+            speed: 4000,
+            refreshInterval: 50,
+            onComplete: function(value) {
+            //console.debug(this);
+            }
+            });
+        });
 
-            setTimeout(function(){
-                musicodometer.innerHTML = 236;
-            }, 1500);
-
-            setTimeout(function(){
-                photoodometer.innerHTML = 16;
-            }, 2000);
-
-            setTimeout(function(){
-                bikeodometer.innerHTML = 42;
-            }, 2500);
-
-             });
 
 
 
@@ -218,7 +221,6 @@ ODOMETER
 scroll menu
 *************************************************************/
 
-$(document).ready(function() {
 
     $('a[href*=#]').each(function() {
         if($(this).attr('href').indexOf("#") == 0) {
@@ -230,4 +232,5 @@ $(document).ready(function() {
         }
     });
 
+}
 });

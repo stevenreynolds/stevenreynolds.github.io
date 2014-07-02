@@ -1,9 +1,50 @@
+header.cbp-af-header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 45px;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    z-index: 1;
+}
+
+.header-container header.cbp-af-header-shrink {
+    display: block;
+    width: 100%;
+    margin:0;
+    background-color: #2F353E;
+    position: fixed;
+    min-height: 52px;
+    padding-bottom: 15px;
+    padding-top:15px;
+    z-index: 1;
+}
+
 .logo{
     display: inline-block;
     float: left;
+    max-width: 343px; /* Match logo size */
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
+
 .logo img, .logo-foot img{
     width: 100%;
+}
+
+.cbp-af-header-shrink .logo img{
+    max-width: 250px;
+}
+
+.logo-foot{
+    max-width: 145px; /* Match footer logo size */
 }
 
 #nav-wrap {
@@ -15,6 +56,10 @@
 .header-container nav{
     float: right;
     margin-top: 10px;
+}
+
+.cbp-af-header-shrink nav{
+    margin-top: 7px;
 }
 
 .header-container .nav li{

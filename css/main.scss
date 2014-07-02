@@ -10,17 +10,22 @@
 	width: 0;
 	height: 5px;
 	-webkit-transition: width 0.3s ease-out;
-  -moz-transition: width 0.3s ease-out;
-  -o-transition: width 0.3s ease-out;
-  transition: width 0.3s ease-out;
+  	-moz-transition: width 0.3s ease-out;
+  	-o-transition: width 0.3s ease-out;
+  	transition: width 0.3s ease-out;
 	box-shadow: 0px 1px 5px rgba(0,0,0,0.25);
 }
 
-
-
 .main-container{
-	padding: 25px 0;
+	padding: 80px 0;
 }
+.main-container#work{
+	padding: 80px 0 0 0;
+}
+.main-container.counter-container, .main-container.quote-container{padding: 0;}
+
+.main-container .counter, .main-container .quote{padding: 140px 0;}
+
 .main-content{
 	width: 65%;
 	float: left;
@@ -30,29 +35,21 @@
 	float: none;
 }
 
-#about.main-container{
-
-}
-
-.main-container #quote{
-	min-height: 280px;
+.main-container .counter{
+	min-height: 240px;
 	width: 100%;
-	background: url(../img/bg-1.jpg) no-repeat center center fixed;
+	background: url(../img/counter-bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-1.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-1.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/counter-bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/counter-bg.jpg', sizingMethod='scale')";
 }
 
-#gallery.main-container{
-
-}
-
-.main-container #contact{
-	width:100%;
-	height:100%;
+.main-container .quote{
+	min-height: 120px;
+	width: 100%;
 	background: url(../img/bg-1.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
