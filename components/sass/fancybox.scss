@@ -1,0 +1,121 @@
+#fancybox-thumbs ul li img {
+    max-width: none
+}
+.info.hidden {
+    display: none
+}
+.fancybox-wrap {
+    background: #FFF !important
+}
+.fancybox-title,
+.fancybox-error {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    font-weight: 400 !important;
+}
+.fancybox-title h2,
+.fancybox-title h3 {
+    font-family: 'aleoitalic', serif !important;
+    color: #616161;
+    margin-bottom: 5px;
+    line-height: 22px;
+    font-size: 18px;
+}
+.fancybox-skin {
+    color: #616161 !important
+}
+.fancybox-title-inside-wrap {
+    padding: 20px !important
+}
+.fancybox-nav span {
+    width: 36px !important;
+    height: 36px !important;
+    margin-top: -18px !important;
+}
+.fancybox-close {
+    top: 10px !important;
+    right: 10px !important;
+    width: 36px !important;
+    height: 36px !important;
+}
+.fancybox-close:before,
+.fancybox-prev span:before,
+.fancybox-next span:before {
+    font-family: 'myicons';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    margin-right: 0 !important;
+    margin-top: 7px !important;
+    text-align: center;
+    width: 36px !important;
+    font-size: 20px !important;
+}
+/* Firefox Fix */
+@-moz-document url-prefix() { 
+	.fancybox-close:before,
+	.fancybox-prev span:before,
+	.fancybox-next span:before {
+	    margin-top: 6px !important
+	}
+}
+.fancybox-close,
+.fancybox-prev span,
+.fancybox-next span {
+    background: rgba(0,0,0,0.45) !important;
+    color: #f7f7f7 !important;
+    text-align: center !important;
+    -webkit-transition: all 200ms ease-in !important;
+    -o-transition: all 200ms ease-in !important;
+    -moz-transition: all 200ms ease-in !important;
+    opacity: 0;
+}
+.fancybox-close:hover,
+.fancybox-prev span:hover,
+.fancybox-next span:hover {
+    background: rgba(0,0,0,0.65) !important
+}
+.fancybox-wrap:hover .fancybox-close,
+.fancybox-wrap:hover .fancybox-prev span,
+.fancybox-wrap:hover .fancybox-next span {
+    opacity: 1
+}
+.fancybox-prev span:before {
+    content: '\e75d'
+}
+.fancybox-next span:before {
+    content: '\e75e'
+}
+.fancybox-close:before {
+    content: '\E803'
+}
+#fancybox-loading {
+    margin-top: -18px !important;
+    margin-left: -18px !important;
+    opacity: 1 !important;
+}
+#fancybox-loading div {
+    height: 36px !important;
+    width: 36px !important;
+    position: relative !important;
+    -webkit-animation: rotation .8s infinite linear !important;
+    -moz-animation: rotation .8s infinite linear !important;
+    -o-animation: rotation .8s infinite linear !important;
+    animation: rotation .8s infinite linear !important;
+    border-left: 3px solid rgba(40,184,216,.15) !important;
+    border-right: 3px solid rgba(40,184,216,.15) !important;
+    border-bottom: 3px solid rgba(40,184,216,.15) !important;
+    border-top: 3px solid rgba(40,184,216,.8) !important;
+    border-radius: 100% !important;
+}
+.fancybox-overlay {
+    background: rgba(27,27,27,0.94) !important
+}
+.fancybox-opened .fancybox-skin {
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.33);
+    box-shadow: 0 0 5px rgba(0,0,0,0.33);
+}

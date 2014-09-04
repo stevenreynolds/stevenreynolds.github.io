@@ -1,0 +1,49 @@
+.progress-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.progress-list p {
+    margin-bottom: 5px
+}
+.progress-list li {
+    margin-bottom: 20px
+}
+.progress-list li em {
+    padding-left: 8px;
+    color: #16AD99;
+    font-style: normal;
+}
+.progress-list li em:before {
+    content: "-";
+    padding-right: 10px;
+    display: inline-block;
+}
+.progress.plain {
+    height: 15px;
+    margin-bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background: none;
+    border: 1px solid #16AD99;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.progress.plain .bar {
+    float: left;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: none;
+    background: #16AD99;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}

@@ -1,0 +1,128 @@
+figure {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.items li figure img {
+    display: block;
+    width: 100%;
+}
+figure a,
+figure a img {
+    display: block;
+    position: relative;
+}
+figure img {
+    display: block;
+    max-width: 100%;
+}
+figure a .text-overlay {
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+    padding: 20px;
+    background: #16AD99;
+    background: rgba(40,184,216,0.90);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+figure a:hover .text-overlay {
+    opacity: 1
+}
+figure a .text-overlay:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+figure a .text-overlay .info {
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    margin-top: -11px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.icon-overlay {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.icon-overlay img {
+    display: block;
+    max-width: 100%;
+}
+.icon-overlay a .icn-more {
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+    background: #16AD99;
+    background: rgba(40,184,216,0.93);
+    overflow: hidden;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.icon-overlay a:hover .icn-more {
+    opacity: 1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.icon-overlay a .icn-more:before {
+    font-family: 'fontello';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    position: absolute;
+    text-align: center;
+    content: '\f517';
+    line-height: 1;
+    color: #FFF;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    font-size: 15px;
+    top: 50%;
+    margin: -8px 0 0 -6px;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+    -moz-transition: -moz-transform 0.25s ease-in-out;
+    -o-transition: -o-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+}
+.icon-overlay a:hover .icn-more:before {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.icon-overlay a:hover .icn-more:before {
+    top: 50%!important
+}

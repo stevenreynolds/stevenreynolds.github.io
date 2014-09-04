@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+}
+
+.intro {
+    background-color: #2F353E;
+    background-image: url("../../images/slider-bg1.jpg");
+    background-attachment: fixed !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-copy {
+    position: relative;
+    top: 35%;
+    z-index: 1;
+    text-align: center;
+    display: block;
+}
+.intro-copy h1,.intro-copy h2, .intro-copy p {
+    color: #f4f4f4;
+    margin: 0;
+}
+.intro-copy h1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height:18px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.intro-copy h2 {
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 20px;
+    font-family: 'aleoitalic', serif;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.intro-copy p {
+    color: #9c9c9c;
+}
+
+.introborder {
+    background-color: #FFF;
+    width: 73px;
+    height: 3px;
+    margin: 30px auto 30px;
+}
+
+.intro-overlay {
+    background-color: #2F353E;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+
+[data-loaded="true"] .intro-overlay {
+    background-color: rgba(47, 53, 62, 0.7);
+}
+
+[data-loaded="true"] .intro-copy {
+    opacity: 1;
+}

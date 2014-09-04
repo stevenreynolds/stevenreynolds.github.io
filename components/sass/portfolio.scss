@@ -1,0 +1,41 @@
+.offset {
+    display: block
+}
+.filter {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    z-index: 7999;
+}
+.filter ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding: 17px 0;
+}
+.filter ul li {
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #444;
+}
+.filter ul li:before {
+    content: "/";
+    display: inline-block;
+    padding-right: 3px;
+    color: #aaa;
+}
+.filter ul li:first-child:before {
+    display: none
+}
+.filter ul li a {
+    color: #444;
+    padding: 0 20px;
+}
+.filter ul li a:hover,
+.filter ul li.current a,
+.filter ul li a.active {
+    color: #16AD99
+}

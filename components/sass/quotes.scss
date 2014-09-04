@@ -1,0 +1,54 @@
+#quotes {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+#quotes .author {
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #d9d9d9;
+    display: block;
+}
+#quotes div {
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 32px;
+    font-weight: 300;
+    font-family: 'aleoitalic', serif;
+    position: relative;
+}
+#quotes .tab {
+    border: none;
+    margin: 0;
+    display: inline;
+}
+#quotes .etabs {
+    padding: 0;
+    margin: 0;
+    height: 12px;
+}
+#quotes .tab a {
+    padding: 0;
+    text-indent: -99999px;
+    width: 14px;
+    height: 14px;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.5);
+    display: inline-block;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+#quotes .tab a.active,
+#quotes .tab a:hover {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.8);
+    position: relative;
+    z-index: 3;
+}
+#quotes .panel-container {
+    border: none
+}

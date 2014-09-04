@@ -1,0 +1,75 @@
+.parallax.quotes {
+    background-image: url(../../images/parallax.jpg);
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #2F353E;
+    overflow: hidden;
+    color: #d9d9d9;
+}
+.parallax-quote a {
+    color: #d9d9d9
+}
+.parallax-quote a:hover {
+    color: #1abb9c
+}
+.parallax-quote input,
+.parallax-quote textarea {
+    background: #333;
+    background: rgba(255,255,255,0.15);
+    color: #d9d9d9;
+    border: none;
+}
+.parallax-quote input:focus,
+.parallax-quote textarea:focus {
+    background: #222;
+    background: rgba(255,255,255,0.22);
+    border: none;
+}
+.parallax-quote h1,
+.parallax-quote h2,
+.parallax-quote h3,
+.parallax-quote h4,
+.parallax-quote h5,
+.parallax-quote h6 {
+    color: #f5f5f5
+}
+.parallax-quote .section-title h3:before,
+.parallax-quote .section-title h3:after {
+    border-color: rgba(255,255,255,0.5)
+}
+.parallax-quote.mobile {
+    background-attachment: scroll !important
+}
+
+.page-title {
+    height: 300px;
+    background: url(../../images/page-title-1.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+.page-title h1 {
+    text-align: center;
+    top: 57.5%;
+    vertical-align: middle;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    font-family: 'aleoitalic', serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin: 0;
+    color: #f5f5f5;
+}
+.page-title .overlay {
+    background: rgba(0,0,0,0.45);
+    height: 100%;
+    position: relative;
+}
