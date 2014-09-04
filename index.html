@@ -1,379 +1,661 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta content="black" name="apple-mobile-web-app-status-bar-style">
-
-    <title>Steven Reynolds | Freelance Web and Graphic Designer</title>
-
-    <meta name="description" content="My name is Steven Reynolds and I love crafting the web, I specialise in clean, user-friendly, grid based websites with a focus on simplicity, usability and a touch of ZEN.">
-
-    <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
-
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="I am a Freelance Web and Graphic Designer with a passion for clean, user-friendly websites who absolutly loves his job. Helping clients stay up-to-date on the newest web technology and design trends to create websites with beauty.">
+<meta name="keywords" content="web design, graphic design, ui design, ux design, logo design, branding, photography, html5, css3, jquery, php">
+<meta name="author" content="Steven Reynolds">
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>Steven Reynolds | Freelance Web and Graphic Designer</title>
+<!-- Bootstrap core CSS -->
+<link href="_/css/bootstrap.min.css" rel="stylesheet">
+<link href="_/js/google-code-prettify/prettify.css" rel="stylesheet">
+<link href="_/js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="all" />
+<link href="_/js/fancybox/helpers/jquery.fancybox-thumbs0ff5.css?v=1.0.2" rel="stylesheet" type="text/css" />
+<link href="_/css/styles.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<!--[if IE 7]><link rel="stylesheet" href="_/css/myicons-ie7.css"><![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="_/js/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
 </head>
 
 <body id="top">
-    <div class="overlay"></div>
+<div class="body-wrapper">
 
-    <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-    <![endif]-->
+  <!-- navbar -->
+  <div class="navbar">
+    <!-- nav-collapse --> 
+    <div class="navbar-header">
+      <div class="container">
+          <div class="basic-wrapper">
+            <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu'></i></a> <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" data-src="images/logo.png" data-ret="images/logo@2x.png" class="retina" /></a>
+          </div>
+        <nav class="collapse navbar-collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#accordion">Contact</a></li>
+          </ul>
+          <ul class="social pull-right">
+            <li><a href="https://www.facebook.com/sdlonyernevets" target="_blank"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://twitter.com/stevenreynolds_" target="_blank"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/u/0/105046284877318568136/about" target="_blank"><i class="icon-googleplus"></i></a></li>
+            <li><a href="http://500px.com/StevenReynolds1"><i class="icon-500px" target="_blank"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+  <!--/.navbar -->
 
-    <!-- Start Intro -->
-    <div data-stellar-background-ratio="0.5" class="header-container" id="intro">
-        <header class="cbp-af-header wow fadeInDown">
-            <div class="wrapper clearfix">
-                <a href="index.html" class="logo"><img src="img/logo@2x.png" alt="Logo" /></a>
+  <!-- intro -->
+  <div class="intro background-image parallax">
+    <div class="intro-copy">
+      <h1>Graphic - Web - Branding - Photography</h1>
+      <h2><span class="rotate">I create beautiful things, I strive for simplicity, Inspired by all forms of design, I love what I do</span></h2>
+      <p>Based in Gifu, Japan since 2012</p>
+      <div class="introborder"></div>
+      <a href="#accordion" class="btn">Get in touch</a>
+      </div>
+      <div class="intro-overlay"></div>
+  </div>
+  <!--/.intro -->
+  
+  <!-- about --> 
+  <div class="light-wrapper" id="about">
+    <div class="container inner">
+      <div class="row">
 
-
-                <!-- Start Main Navigation -->
-                <nav id="nav-wrap" class="menu-main-menu-container">
-               		<ul class="nav" id="nav">
-                        <li><a data-scroll href="#top">Home</a></li>
-                        <li><a data-scroll href="#about">About</a></li>
-                        <li><a data-scroll href="#work">Work</a></li>
-                        <li class="last"><a data-scroll href="#contact">Contact</a></li>
-                    </ul>
-                </nav><!-- End Main Navigation -->
-
+      <!-- little-about-me --> 
+        <div class="col-sm-6">
+          <div class="section-title">
+            <h3>A Little About Me</h3>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <figure><img src="images/about1.jpg" alt="" /></figure>
             </div>
-        </header><!-- End Header -->
-
-        <!-- Start Intro Text -->
-            <div class="wrapper clearfix">
-                <div class="container wow fadeInLeftBig">
-                <div class="cta half">
-                    <h1>Salutations!</h1>
-                    <h3>My name is Steven Reynolds and I love crafting the web.</h3>
-                    <p>I specialise in clean, user-friendly, grid based websites with a focus on simplicity, usability and a touch of <em>ZEN</em>, with the tools had hand I want to make the web easier and more pleasant to use.</p>
-                    <p><a class="more" data-scroll href="#about">Read More</a></p>
-                </div>
+            <div class="col-sm-7">
+              <p class="lead">My name is Steven Reynolds and I love crafting the web.</p>
+              <p>I am a Freelance Web and Graphic Designer with a passion for clean, user-friendly websites who absolutly loves his job. Helping clients stay up-to-date on the newest web technology and design trends to create websites with beauty.</p>
+              <p>For the past 3 years I have been involved in 100+ projects ranging from small to medium sized businesses, creating everything from logos, websites, UI, brochures, business cards, video & photo editing, flash add banners and email newsletters.</p>
             </div>
-            </div>
-	</div><!-- End Intro -->
-
-
-    <!-- Start About -->
-    <div class="main-container about" id="about">
-        <div class="main wrapper clearfix">
-
-            <!-- Start Main Content -->
-            <div class="main-content full">
-                <div class="clearfix">
-                    <div class="clearfix wow fadeInRight">
-                        <h1>About Me</h1>
-                        <p class="lead">How I spend my time will help give you get a better understanding about myself.</p>
-                    </div>
-
-                    <div class="clearfix">
-                    <div class="half wow fadeInLeft">
-                    <div class="half left">
-                        <img class="nomarg" alt="Steven Reynolds Photo" src="img/about-steven-th.jpg"></div>
-
-                        <p>I am a Freelance Web and Graphic Designer with a passion for clean, user-friendly, grid based websites who absolutly loves his job. Helping clients stay up-to-date on the newest web technology and design trends to create websites with beauty.<br><br>
-
-                        For the past 3 years I have been involved in 100+ web projects ranging from small to medium sized businesses, creating everything from logos, websites, user interfaces, brochures, business cards, video &amp; photo editing, flash add banners and email newsletters.</p>
-
-                    </div>
-
-                    <div class="half last wow fadeInRight">
-                        <p>I&apos;m naturally a tech geek and loves anything to do with computers and devices. When I&apos;m not pushing pixels and learning all there is about the web you can find me traveling around Asia, learning Japanese and dabbling in photography.<br><br>
-
-                        <span class="highlight">Fun Facts:</span> Constantly trying make it better / loves exploring / obsessed with details &amp; typography (not enough padding drives me crazy) / Inspired by all forms of design / hates IE / keen eye for simplicity /  advocate for web standards / has a crush on responsive design / middle name is Robert</p>
-                        <p><a href="#contact" class="more">Say Hi, Email me</a></p>
-                    </div>
-                    </div>
-
-                    </div>
-                </div>
-
-
-            </div> <!-- #main -->
-    </div> <!-- End About -->
-
-
-    <!-- Start Counter -->
-    <div class="main-container counter-container">
-        <div data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-100" class="counter">
-        <div class="main wrapper clearfix">
-
-
-                <!-- Start Main Content -->
-                <div class="main-content full">
-                    <div class="clearfix">
-                       <div class="clearfix wow fadeInRight">
-                            <!-- Headings -->
-                            <p class="lead center">Some interesting facts about my average week</p>
-                        </div>
-
-                        <!-- Statistics -->
-                        <div class="statistics wow bounceIn">
-                                    <ul class="clearfix">
-                                                                                        <li>
-                                                    <h4 class="animated">b</h4>
-                                                    <h5 id="coffeeodometer" data-wow-offset="80" data-wow-duration="2s"></h5>
-                                                    <h6>Cappuccinos</h6>
-                                                </li>
-                                                                                            <li>
-                                                    <h4 class="animated">c</h4>
-                                                    <h5 id="gameodometer" data-wow-offset="80" data-wow-duration="2s" ></h5>
-                                                    <h6>Hours Gaming</h6>
-                                                </li>
-                                                                                            <li>
-                                                    <h4 class="animated">d</h4>
-                                                    <h5 id="musicodometer" data-wow-offset="80" data-wow-duration="2s"></h5>
-                                                    <h6>Songs Listened to</h6>
-                                                </li>
-                                                                                            <li>
-                                                    <h4 class="animated">a</h4>
-                                                    <h5 id="photoodometer" data-wow-offset="80" data-wow-duration="2s"></h5>
-                                                    <h6>Photos Taken</h6>
-                                                </li>
-                                                                                            <li>
-                                                    <h4 class="animated">e</h4>
-                                                    <h5 id="bikeodometer" data-wow-offset="80" data-wow-duration="2s"></h5>
-                                                    <h6>Kilometers Ridden</h6>
-                                                </li>
-
-                                    </ul>
-                        </div>
-
-                     </div>
-                    <!-- Finish Main Content -->
-                </div>
-
-
-            </div> <!-- #main -->
-            </div>
-    </div> <!-- End Counter -->
-
-
-    <!-- Start Work -->
-    <div class="main-container" id="work">
-        <div class="main wrapper clearfix">
-
-            <!-- Start Main Content -->
-            <div class="main-content full">
-                <div class="clearfix">
-                <div id="gallery">
-                    <div class="clearfix wow fadeInRight">
-                    <h1>My Work</h1>
-                    <p class="lead">See what I have done for my happy clients</p>
-                    </div>
-
-                    <!-- FILTERMENU -->
-                    <ul class="filters wow fadeInUp">
-                        <li><a href="#">Show all</a></li>
-                        <li class="cat-item web-cat"><a href="#" title="View only web design work">Web</a></li>
-                        <li class="cat-item logo-cat"><a href="#" title="View only logo design work">Logo</a></li>
-                    </ul>
-
-                </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- /.little-about-me --> 
 
-        <div class="main-content full">
-            <div class="clearfix">
-
-                        <!-- IMAGES CONTAINER -->
-                        <div class="images_container wow fadeInUp">
-
-                            <!-- MAIN LOOP -->
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/investorhomes-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Investor Homes :: <a href='http://www.investorhomes.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/investorhomes-th.jpg" alt="Investor Homes"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/wmr-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Washing Machine Repairs WEST" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/wmr-logo-th.jpg" alt="Washing Machine Repairs WEST"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/todd-energy-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Todd Energy :: <a href='http://www.toddenergy.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/todd-energy-th.jpg" alt="Todd Energy"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/aucklandroseparkhotel-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Auckland Rose Parkhotel :: <a href='http://www.aucklandroseparkhotel.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/aucklandroseparkhotel-th.jpg" alt="Auckland Rose Parkhotel"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/zymus-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Zymus International :: <a href='http://www.zymus.net/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/zymus-th.jpg" alt="Zymus International"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/adv-prosthodontics-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Advanced Prosthodontics :: <a href='http://www.advancedprosthodontics.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/adv-prosthodontics-logo-th.jpg" alt="Advanced Prosthodontics"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/wff-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Wholesale Frozen Foods" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/wff-logo-th.jpg" alt="Wholesale Frozen Foods"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/soulscape-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Soulscape :: <a href='http://www.getsoul.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/soulscape-th.jpg" alt="Soulscape"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item">
-                            <a href="img/vidcom-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Vidcom :: <a href='http://www.vidcom.com/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/vidcom-th.jpg" alt="Vidcom"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/adv-prosthodontics-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Advanced Prosthodontics :: <a href='http://www.advancedprosthodontics.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/adv-prosthodontics-th.jpg" alt="Advanced Prosthodontics"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/loccomotion-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Loccomotion" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/loccomotion-logo-th.jpg" alt="Loccomotion"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/runningwithfire-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Running With Fire :: <a href='http://www.runningwithfire.com/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/runningwithfire-th.jpg" alt="Running With Fire"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item">
-                            <a href="img/club-physical-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Club Physical :: <a href='http://www.clubphysical.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/club-physical-th.jpg" alt="Club Physical"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/sata-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="South Auckland Taxi Association :: <a href='http://www.sata.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/sata-th.jpg" alt="South Auckland Taxi Association"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/healthfood-nz-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Northcote Health Food" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/healthfood-nz-logo-th.jpg" alt="Northcote Health Food"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/alexanders-hair-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Alex Beasley Hairstylist" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/alexanders-hair-logo-th.jpg" alt="Alex Beasley Hairstylist"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/tyreworx-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Tyreworx :: <a href='http://www.tyreworx.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/tyreworx-th.jpg" alt="Tyreworx"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/srp-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Steel Rollformed Products" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/srp-logo-th.jpg" alt="Steel Rollformed Products"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/aspectbathrooms-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Aspect Bathrooms" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/aspectbathrooms-logo-th.jpg" alt="Aspect Bathrooms"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/westgate-church-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Westgate Babtist Church" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/westgate-church-logo-th.jpg" alt="Westgate Babtist Church"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/choco-cake-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="The Chocolate Cake Company :: <a href='http://www.thechocolatecakecompany.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/choco-cake-th.jpg" alt="The Chocolate Cake Company"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/animal-stuff-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Animal Stuff :: <a href='http://www.animalstuff.co.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/animal-stuff-th.jpg" alt="Animal Stuff"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item">
-                            <a href="img/japan-mart-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Japan Mart :: <a href='http://japanmart.co.nz' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/japan-mart-th.jpg" alt="Japan Mart"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/martin-davidson-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Martin Davidson &amp; Associates" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/martin-davidson-logo-th.jpg" alt="Martin Davidson &amp; Associates"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/familylife-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="FamilyLife :: <a href='http://www.familylife.org.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/familylife-th.jpg" alt="FamilyLife"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths logo-cat isotope-item"><a href="img/icf-logo-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Industrial and Commercial Fans" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/icf-logo-th.jpg" alt="Industrial and Commercial Fans"></div></div>
-
-                            <div class="gallery_item mosaic-block fade sevenths web-cat isotope-item"><a href="img/papatoetoesports-mock.jpg" class="mosaic-overlay fancybox" data-fancybox-group="gallery" title="Papatoetoe Sports Centre :: <a href='http://www.papatoetoesports.org.nz/' target='_blank'>Launch website</a>" rel="gallery"></a><div class="mosaic-backdrop"><img src="img/papatoetoesports-th.jpg" alt="Papatoetoe Sports Centre"></div></div>
-                        </div>
-                        <!-- END IMAGES CONTAINER -->
-
-            </div> <!-- #main -->
+        <!-- skill-list --> 
+        <div class="col-sm-6">
+          <div class="section-title">
+            <h3>My Skills</h3>
+          </div>
+          <p>Duis non lectus sit amet est imperdiet cursus elementum vitae eros. Etiam adipiscingmorbi vitae magna tellus, ac mattis urna phasellus rhoncus.</p>
+          <div class="divide10"></div>
+          <ul class="progress-list">
+            <li>
+              <p>Photoshop <em>90%</em></p>
+              <div class="progress plain">
+                <div class="bar" style="width: 90%;"></div>
+              </div>
+            </li>
+            <li>
+              <p>Illustrator <em>70%</em></p>
+              <div class="progress plain">
+                <div class="bar" style="width: 70%;"></div>
+              </div>
+            </li>
+            <li>
+              <p>HTML (5) <em>70%</em></p>
+              <div class="progress plain">
+                <div class="bar" style="width: 70%;"></div>
+              </div>
+            </li>
+            <li>
+              <p>CSS (3) <em>80%</em></p>
+              <div class="progress plain">
+                <div class="bar" style="width: 80%;"></div>
+              </div>
+            </li>
+            <li>
+              <p>jQuery / PHP <em>30%</em></p>
+              <div class="progress plain">
+                <div class="bar" style="width: 30%;"></div>
+              </div>
+            </li>
+          </ul>
         </div>
-    </div><!-- End Work -->
+        <!-- /.skill-list --> 
 
+      </div>
+    </div>
+  </div>
+  <!-- /.about --> 
 
-    <!-- Start Quote -->
-    <div class="main-container quote-container">
-        <div data-stellar-background-ratio="0.5" class="quote">
-        <div class="main wrapper center clearfix">
-
-
-            <!-- Start Quotes-->
-            <blockquote class="wow bounceIn">The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.<cite>- Paul Rand</cite> </blockquote>
-
-            </div>
-
-        </div> <!-- #main -->
+  <!-- fun-facts --> 
+  <div class="dark-wrapper">
+    <div class="container inner">
+      <div class="row text-center facts">
+        <div class="col-md-2 col-md-offset-1 milestone">
+          <div class="col-wrapper">
+            <div class="icon-border bm15"> <i class="icon-coffee"></i> </div>
+            <h4 class="milestone-value" data-stop="16" data-speed="2000"></h4>
+            <p>Cappuccinos</p>
+          </div>
         </div>
-    </div> <!-- End Quote -->
-
-
-    <!-- Start Contact -->
-    <div class="main-container" id="contact">
-        <div data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-500" class="contact">
-        <div class="main wrapper clearfix">
-
-
-            <!-- Start Main Content -->
-            <div class="main-content">
-                <div class="clearfix">
-
-                    <!-- Headings -->
-                    <div class="wow fadeInLeft">
-                    <h1>Contact Me</h1>
-                    <p class="lead">Drop me a line if you're interested in working together!</p>
-
-                        <p class="">I'm able to work on small projects at the moment. A brochure design here, logo there, perhaps a small corporate website, or even a website for your small restaurant, just shoot me an email even if you just want to say Hi.</p>
-                    </div>
-
-                    <form id="contactform" class="wow fadeInLeft" action="//forms.brace.io/steven@stevenreynolds.com" method="post">
-                        <table width="100%" class="tableless">
-                            <tr><td><input type="text" id="name" name="name" placeholder="What's your name" autofocus /></td></tr>
-                            <tr><td><input type="email" id="email" name="email" placeholder="Email goes here" /></td></tr>
-                            <tr><td><textarea id="message" name="message" rows="5" cols="20" placeholder="Whats this about?"></textarea></td></tr>
-
-                            <tr><td><input name="button" class="btn" type="submit" value="Send Message" id="send" /><br/></td></tr>
-                        </table>
-                    </form>
-                    <div id="response"></div>
-
-
-                <!-- Finish Main Content -->
-                </div>
-            </div>
-
-
-             <!-- Start Main Sidebar -->
-            <aside class="right-aside wow fadeInRight">
-                <h2>Networks</h2>
-                <ul>
-                    <li><a href="https://www.facebook.com/sdlonyernevets" target="_blank">Follow me on Facebook</a></li>
-                    <li><a href="https://twitter.com/stevenreynolds_" target="_blank">Tweeting up a storm</a></li>
-                    <li><a href="http://www.flickr.com/photos/steven-reynolds/" target="_blank">Photos on Flickr</a></li>
-                    <li><a href="https://plus.google.com/u/0/105046284877318568136/about" target="_blank">Hanging out on Google+</a></li>
-                </ul>
-
-               <hr class="dots"/>
-
-
-               <p><em>Feel free to take a look at my resume to learn a bit more about my experiences and education.</em></p>
-               <p><a class="more" target="_blank" href="Steven-Reynolds-CV.pdf">Download Resume</a></p>
-
-            </aside>
-
-
-        </div> <!-- #main -->
-        </div> <!-- contact -->
-    </div> <!-- End Contact -->
-
-	<!-- Start Footer -->
-    <footer>
-        <div class="main wrapper clearfix wow fadeInUp">
-            <div class="foot right">
-                <ul class="social-link">
-                    <li><a href="https://www.facebook.com/sdlonyernevets" target="_blank" title="Follow Me on Facebook">g</a></li>
-                    <li><a href="https://twitter.com/stevenreynolds_" target="_blank" title="Tweeting up a storm">f</a></li>
-                    <li><a href="http://www.flickr.com/photos/steven-reynolds/" target="_blank" title="Photos on Flickr">i</a></li>
-                    <li><a href="https://plus.google.com/u/0/105046284877318568136/about" target="_blank" title="Hanging out on Google+">h</a></li>
-                </ul>
-            </div>
-
-            <div class="foot left">
-                <a href="index.html" class="logo-foot"><img src="img/logo-foot@2x.png" alt="logo" /></a>
-                &copy; Copyright Stevenreynolds.com 2013
-            </div>
+        <div class="col-sm-2 milestone">
+          <div class="col-wrapper">
+            <div class="icon-border bm15"> <i class="icon-gamepad"></i> </div>
+            <h4 class="milestone-value" data-stop="10" data-speed="2000"></h4>
+            <p>Hours Gaming</p>
+          </div>
         </div>
-    </footer> <!-- End Footer -->
+        <div class="col-sm-2 milestone">
+          <div class="col-wrapper">
+            <div class="icon-border bm15"> <i class="icon-ipod"></i> </div>
+            <h4 class="milestone-value" data-stop="236" data-speed="2000"></h4>
+            <p>Songs Listened To</p>
+          </div>
+        </div>
+        <div class="col-sm-2 milestone">
+          <div class="col-wrapper">
+            <div class="icon-border bm15"> <i class="icon-camera"></i> </div>
+            <h4 class="milestone-value" data-stop="26" data-speed="2000"></h4>
+            <p>Photos Taken</p>
+          </div>
+        </div>
+        <div class="col-sm-2 milestone">
+          <div class="col-wrapper">
+            <div class="icon-border bm15"> <i class="icon-bicycle"></i> </div>
+            <h4 class="milestone-value" data-stop="42" data-speed="2000"></h4>
+            <p>Kilometers Ridden</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.fun-facts --> 
 
+  <!-- quotes --> 
+  <div class="parallax parallax-quote quotes">
+    <div class="container inner text-center">
+      <div id="quotes" class="tab-container">
+        <div class="panel-container">
+          <div id="tst1"> The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.<span class="author">PAUL RAND</span> </div>
+          <div id="tst2"> A designer knows (s)he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.<span class="author">Antoine De Saintexupery</span> </div>
+          <div id="tst3"> Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just say something. It seemed obvious to then after awhile.<span class="author">Steven Jobs</span> </div>
+          <div id="tst4"> The life of a designer is a life of fight. Fight against the ugliness. Just like a doctor fights against disease. For us, the visual disease is what we have around, and what we try to do is cure it somehow with design.<span class="author">Massimo Vignelli</span> </div>
+        </div>
+        <ul class="etabs">
+          <li class="tab"><a href="#tst1">1</a></li>
+          <li class="tab"><a href="#tst2">2</a></li>
+          <li class="tab"><a href="#tst3">3</a></li>
+          <li class="tab"><a href="#tst4">4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /.quotes -->
 
-	<!-- Start Scripts -->
-    <script type="text/javascript" src="js/hisrc.js"></script>
-    <script>
-    $.hisrc.speedTest({ speedTestUri: '50K.jpg' });
-    $(document).ready(function(){
-        $(".hisrc img").hisrc();
-        $(".hisrc img+img").hisrc({
-    });
-    })
-    </script>
+  <!-- portfolio -->
+  <div class="grid-portfolio full-portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-title text-center bm15">
+        <h3>My Latest Work</h3>
+      </div>
+      <p class="text-center">See what I have done for my happy clients.</p>
+    </div>
+    <div class="divide20"></div>
+    <div class="filter dark-wrapper container">
+      <ul>
+        <li><a class="active" href="#" data-filter="*">All</a></li>
+        <li><a href="#" data-filter=".web">Web</a></li>
+        <li><a href="#" data-filter=".logo">Logo</a></li>
+      </ul>
+    </div>
+    <!-- /filter -->
+    <ul class="items">
+      <li class="item thumb web">
+        <figure><a href="images/investorhomes-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-01">
+          <div class="text-overlay">
+            <div class="info">Investor Homes</div>
+          </div>
+          <img src="images/investorhomes-th.jpg" alt="" /> </a></figure>
+        <div id="title-01" class="info hidden">
+          <h2>Investor Homes</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/wmr-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-02">
+          <div class="text-overlay">
+            <div class="info">Washing Machine Repairs WEST</div>
+          </div>
+          <img src="images/wmr-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-02" class="info hidden">
+          <h2>Washing Machine Repairs WEST</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/todd-energy-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-03">
+          <div class="text-overlay">
+            <div class="info">Todd Energy</div>
+          </div>
+          <img src="images/todd-energy-th.jpg" alt="" /> </a></figure>
+        <div id="title-03" class="info hidden">
+          <h2>Todd Energy</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/aucklandroseparkhotel-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-04">
+          <div class="text-overlay">
+            <div class="info">Auckland Rose Park Hotel</div>
+          </div>
+          <img src="images/aucklandroseparkhotel-th.jpg" alt="" /> </a></figure>
+        <div id="title-04" class="info hidden">
+          <h2>Auckland Rose Park Hotel</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/adv-prosthodontics-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-06">
+          <div class="text-overlay">
+            <div class="info">Advanced Prosthodontics</div>
+          </div>
+          <img src="images/adv-prosthodontics-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-06" class="info hidden">
+          <h2>Advanced Prosthodontics</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/zymus-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-05">
+          <div class="text-overlay">
+            <div class="info">Sollicitudin Lorem Tortor</div>
+          </div>
+          <img src="images/zymus-th.jpg" alt="" /> </a></figure>
+        <div id="title-05" class="info hidden">
+          <h2>Zymus</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/wff-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-07">
+          <div class="text-overlay">
+            <div class="info">WFF Food Movers</div>
+          </div>
+          <img src="images/wff-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-07" class="info hidden">
+          <h2>WFF Food Movers</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/soulscape-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-08">
+          <div class="text-overlay">
+            <div class="info">Soulscape Landscaping</div>
+          </div>
+          <img src="images/soulscape-th.jpg" alt="" /> </a></figure>
+        <div id="title-08" class="info hidden">
+          <h2>Soulscape Landscaping</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/vidcom-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-09">
+          <div class="text-overlay">
+            <div class="info">Vidcom</div>
+          </div>
+          <img src="images/vidcom-th.jpg" alt="" /> </a></figure>
+        <div id="title-09" class="info hidden">
+          <h2>Vidcom</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/adv-prosthodontics-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-10">
+          <div class="text-overlay">
+            <div class="info">Advanced Prosthodontics</div>
+          </div>
+          <img src="images/adv-prosthodontics-th.jpg" alt="" /> </a></figure>
+        <div id="title-10" class="info hidden">
+          <h2>Advanced Prosthodontics</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/loccomotion-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-11">
+          <div class="text-overlay">
+            <div class="info">Loccomotion</div>
+          </div>
+          <img src="images/loccomotion-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-11" class="info hidden">
+          <h2>Loccomotion</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/runningwithfire-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-12">
+          <div class="text-overlay">
+            <div class="info">Running With Fire</div>
+          </div>
+          <img src="images/runningwithfire-th.jpg" alt="" /> </a></figure>
+        <div id="title-12" class="info hidden">
+          <h2>Running With Fire</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/club-physical-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-13">
+          <div class="text-overlay">
+            <div class="info">Club Physical</div>
+          </div>
+          <img src="images/club-physical-th.jpg" alt="" /> </a></figure>
+        <div id="title-13" class="info hidden">
+          <h2>Club Physical</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/sata-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-14">
+          <div class="text-overlay">
+            <div class="info">South Auckland Taxi Association</div>
+          </div>
+          <img src="images/sata-th.jpg" alt="" /> </a></figure>
+        <div id="title-14" class="info hidden">
+          <h2>South Auckland Taxi Association</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/healthfood-nz-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-15">
+          <div class="text-overlay">
+            <div class="info">Healthfood New Zealand</div>
+          </div>
+          <img src="images/healthfood-nz-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-15" class="info hidden">
+          <h2>Healthfood New Zealand</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/alexanders-hair-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-16">
+          <div class="text-overlay">
+            <div class="info">Alexander's Hair</div>
+          </div>
+          <img src="images/alexanders-hair-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-16" class="info hidden">
+          <h2>Alexander's Hair</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/tyreworx-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-17">
+          <div class="text-overlay">
+            <div class="info">Tyreworx</div>
+          </div>
+          <img src="images/tyreworx-th.jpg" alt="" /> </a></figure>
+        <div id="title-17" class="info hidden">
+          <h2>Tyreworx</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/srp-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-18">
+          <div class="text-overlay">
+            <div class="info">Steel Rollformed Products</div>
+          </div>
+          <img src="images/srp-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-18" class="info hidden">
+          <h2>Steel Rollformed Products</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/aspectbathrooms-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-19">
+          <div class="text-overlay">
+            <div class="info">Aspect Bathrooms</div>
+          </div>
+          <img src="images/aspectbathrooms-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-19" class="info hidden">
+          <h2>Aspect Bathrooms</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/westgate-church-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-20">
+          <div class="text-overlay">
+            <div class="info">Westgate Church</div>
+          </div>
+          <img src="images/westgate-church-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-20" class="info hidden">
+          <h2>Westgate Church</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/choco-cake-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-21">
+          <div class="text-overlay">
+            <div class="info">The Chocolate Cake Company</div>
+          </div>
+          <img src="images/choco-cake-th.jpg" alt="" /> </a></figure>
+        <div id="title-21" class="info hidden">
+          <h2>Westgate Church</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/animal-stuff-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-22">
+          <div class="text-overlay">
+            <div class="info">Animal Stuff</div>
+          </div>
+          <img src="images/animal-stuff-th.jpg" alt="" /> </a></figure>
+        <div id="title-22" class="info hidden">
+          <h2>Animal Stuff</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/japan-mart-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-23">
+          <div class="text-overlay">
+            <div class="info">Japan Mart</div>
+          </div>
+          <img src="images/japan-mart-th.jpg" alt="" /> </a></figure>
+        <div id="title-23" class="info hidden">
+          <h2>Japan Mart</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/martin-davidson-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-24">
+          <div class="text-overlay">
+            <div class="info">Martin Davidson</div>
+          </div>
+          <img src="images/martin-davidson-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-24" class="info hidden">
+          <h2>Japan Mart</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/familylife-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-25">
+          <div class="text-overlay">
+            <div class="info">Family Life</div>
+          </div>
+          <img src="images/familylife-th.jpg" alt="" /> </a></figure>
+        <div id="title-25" class="info hidden">
+          <h2>Family Life</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb logo">
+        <figure><a href="images/icf-logo-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-26">
+          <div class="text-overlay">
+            <div class="info">Industrial & Commercial Fans</div>
+          </div>
+          <img src="images/icf-logo-th.jpg" alt="" /> </a></figure>
+        <div id="title-26" class="info hidden">
+          <h2>Industrial & Commercial Fans</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+      <li class="item thumb web">
+        <figure><a href="images/papatoetoesports-mock.jpg" class="fancybox-media" data-rel="portfolio" data-title-id="title-27">
+          <div class="text-overlay">
+            <div class="info">Papatoetoe Sports Centre</div>
+          </div>
+          <img src="images/papatoetoesports-th.jpg" alt="" /> </a></figure>
+        <div id="title-27" class="info hidden">
+          <h2>Papatoetoe Sports Centre</h2>
+          <div class="fancybody">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus commodo.</div>
+        </div>
+        <!-- /.info .hidden --> 
+      </li>
+    </ul>
+    <!-- /.items --> 
+  </div>
+  <!-- /.portfolio --> 
 
-    <script src="js/scripts.js"></script>
-    <script type="text/javascript">init();</script>
+  <!-- shots -->
+  <div class="dark-wrapper">
+    <div class="container inner">
+      <div class="section-title text-center">
+        <h3>Latest Shots</h3>
+      </div>
+      <div class="swiper-wrapper flickr-wrapper"> 
+        <a class="arrow-left" href="#"></a> 
+        <a class="arrow-right" href="#"></a>
+        <div class="swiper-container flickr">
+          <div class="swiper flickr-feed"></div>
+        </div>
+      </div>
+    <div class="divide40"></div>
+    <div class="text-center"> <a href="http://500px.com/StevenReynolds1" target="_blank" class="btn"><i class="icon-500px"></i>See More</a> </div>
+    </div>
+  </div>
+  <!-- /.shots -->
+  
+  <!-- contact -->
+  <div class="panel-group contact-btn" id="accordion">
+  <a data-toggle="collapse" data-parent="#accordion" href="#form" class="color-wrapper text-center container panel-default">If you like what you see, let's work together.</a>
+  <div class="light-wrapper panel-collapse collapse" id="form">
+    <div class="container inner">
+      <div class="row">
 
-    <!-- Start Google Analytics-->
-    <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!-- right-colunm -->
+        <div class="col-sm-8">
+          <h1 class="post-title">Drop me a line if you're interested in working together!</h1>
+          <p>I'm able to work on small projects at the moment. A brochure design here, logo there, perhaps a small corporate website, or even a website for your small restaurant, just shoot me an email even if you just want to say Hi.</p>
+          <div class="divide20"></div>
+          <div class="form-container">
+            <div class="response alert alert-success"></div>
+            <form class="forms" action="http://themes.iki-bir.com/kubb/contact/form-handler.php" method="post">
+              <fieldset>
+                <ol>
+                  <li class="form-row text-input-row name-field">
+                    <input type="text" name="name" class="text-input defaultText required" title="Name (Required)"/>
+                  </li>
+                  <li class="form-row text-input-row email-field">
+                    <input type="text" name="email" class="text-input defaultText required email" title="Email (Required)"/>
+                  </li>
+                  <li class="form-row text-input-row subject-field">
+                    <input type="text" name="subject" class="text-input defaultText" title="Subject"/>
+                  </li>
+                  <li class="form-row text-area-row">
+                    <textarea name="message" class="text-area required"></textarea>
+                  </li>
+                  <li class="form-row hidden-row">
+                    <input type="hidden" name="hidden" value="" />
+                  </li>
+                  <li class="nocomment">
+                    <label for="nocomment">Leave This Field Empty</label>
+                    <input id="nocomment" value="" name="nocomment" />
+                  </li>
+                  <li class="button-row">
+                    <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0" />
+                  </li>
+                </ol>
+                <input type="hidden" name="v_error" id="v-error" value="Required" />
+                <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- /.right-colunm -->
 
-          ga('create', 'UA-17012878-1', 'stevenreynolds.com');
-          ga('send', 'pageview');
+        <!-- left-colunm --> 
+        <aside class="col-sm-4 sidebar lp20">
+          <div class="sidebox widget">
+            <div class="section-title">
+              <h3 class="widget-title">Resume</h3>
+            </div>
+            <p>Feel free to take a look at my resume to learn a bit more about my experiences and education.</p>
+            <strong><a href="steven-reynolds-cv.pdf" class="btn"><i class="icon-file-pdf"></i>Download Resume</a></strong>
+          </div> 
+        </aside>
+        <!-- /.left-colunm --> 
 
-    </script><!-- End Google-->
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- /.contact --> 
 
+  <!-- footer --> 
+  <footer class="footer black-wrapper">
+    <div class="container inner">
+      <p class="pull-left">© 2014 Steven Reynolds. All rights reserved.</p>
+      <ul class="social pull-right">
+        <li><a href="https://www.facebook.com/sdlonyernevets" target="_blank"><i class="icon-facebook"></i></a></li>
+        <li><a href="https://twitter.com/stevenreynolds_" target="_blank"><i class="icon-twitter"></i></a></li>
+        <li><a href="https://plus.google.com/u/0/105046284877318568136/about" target="_blank"><i class="icon-googleplus"></i></a></li>
+        <li><a href="http://500px.com/StevenReynolds1"><i class="icon-500px" target="_blank"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- /.footer --> 
+  
+</div>
+<!-- /.body-wrapper --> 
+<script src="_/js/jquery.min.js"></script>
+<script src="_/js/bootstrap.js"></script>
+<script src="_/js/scripts.js"></script>
+<script src="_/js/google-code-prettify/prettify.js"></script>
+<script src="_/js/fancybox/helpers/jquery.fancybox-thumbs0ff5.js?v=1.0.2"></script> 
+<script src="_/js/fancybox/helpers/jquery.fancybox-mediae209.js?v=1.0.0"></script> 
 </body>
 </html>
