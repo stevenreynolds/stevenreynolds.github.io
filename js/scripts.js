@@ -1630,7 +1630,7 @@ $(function() {
   		email: {
   			required: true,
   			email: true
-  		},+
+  		},
   		message: {
   			required: true,
   			minlength: 10
