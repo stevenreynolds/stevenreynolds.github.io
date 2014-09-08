@@ -598,27 +598,19 @@
                     <input type="text" name="name" class="text-input defaultText required" title="Name (Required)"/>
                   </li>
                   <li class="form-row text-input-row email-field">
-                    <input type="text" name="email" class="text-input defaultText required email" title="Email (Required)"/>
+                    <input type="text" name="_replyto" class="text-input defaultText required email" title="Email (Required)"/>
                   </li>
                   <li class="form-row text-input-row subject-field">
-                    <input type="text" name="subject" class="text-input defaultText" title="Subject"/>
+                    <input type="text" name="_subject" class="text-input defaultText" title="Subject"/>
                   </li>
                   <li class="form-row text-area-row">
                     <textarea name="message" class="text-area required"></textarea>
-                  </li>
-                  <li class="form-row hidden-row">
-                    <input type="hidden" name="hidden" value="" />
-                  </li>
-                  <li class="nocomment">
-                    <label for="nocomment">Leave This Field Empty</label>
-                    <input id="nocomment" value="" name="nocomment" />
                   </li>
                   <li class="button-row">
                     <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0" />
                   </li>
                 </ol>
-                <input type="hidden" name="v_error" id="v-error" value="Required" />
-                <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
+                <input type="hidden" name="_next" value="thanks.html" />
               </fieldset>
             </form>
           </div>
