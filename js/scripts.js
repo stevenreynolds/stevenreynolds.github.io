@@ -570,12 +570,9 @@ $(function() {
   $('#contactform').validate({
     // Specify what the errors should look like
     // when they are dynamically added to the form
-    errorElement: "label",
-    wrapper: "li",
+    errorElement: "span",
     errorPlacement: function(error, element) {
-      error.insertBefore( element.parent().parent() );
-      error.wrap("<span class='error'></span>");
-
+      error.insertBefore( element.parent() );
     },
     
     // Add requirements to each of the fields
