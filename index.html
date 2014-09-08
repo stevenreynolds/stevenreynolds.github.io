@@ -590,21 +590,21 @@
           <div class="divide20"></div>
           <div class="form-container">
             <div class="response alert alert-success"></div>
-            <form class="forms" action="//forms.brace.io/steven@stevenreynolds.com" method="post">
+            <form id="contact-form" class="forms" action="//forms.brace.io/steven@stevenreynolds.com" method="post">
             <input type="hidden" name="_next" value="http://stevenreynolds.com/thanks.html" />
               <fieldset>
                 <ol>
                   <li class="form-row text-input-row name-field">
-                    <input type="text" name="name" class="text-input defaultText required" title="Name (Required)"/>
+                    <input id="name" type="text" name="name" class="text-input defaultText required" title="Name (Required)" autofocus />
                   </li>
                   <li class="form-row text-input-row email-field">
-                    <input type="text" name="_replyto" class="text-input defaultText required email" title="Email (Required)"/>
+                    <input id="email" type="text" name="_replyto" class="text-input defaultText required email" title="Email (Required)"/>
                   </li>
                   <li class="form-row text-input-row subject-field">
                     <input type="text" name="_subject" class="text-input defaultText" title="Subject"/>
                   </li>
                   <li class="form-row text-area-row">
-                    <textarea name="message" class="text-area required"></textarea>
+                    <textarea id="message" name="message" class="text-area required"></textarea>
                   </li>
                   <li class="button-row">
                     <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0" />
