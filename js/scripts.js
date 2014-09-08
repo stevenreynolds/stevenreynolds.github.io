@@ -2029,7 +2029,7 @@ $(document).ready(function () {
 // });
   $(document).ready(function() {
     "use strict";
-    $('#myForm').ajaxForm({
+    $('#contact-form').ajaxForm({
             url: "//forms.brace.io/steven@stevenreynolds.com", 
             method: "POST",
             data: {message: "hello!"},
