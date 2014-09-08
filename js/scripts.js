@@ -616,7 +616,10 @@ $(function() {
           $(form).slideUp("fast");
           $("#response").html(responseText).hide().slideDown("fast");
         },
-        url: "//forms.brace.io/steven@stevenreynolds.com"
+        url: "//forms.brace.io/steven@stevenreynolds.com",
+        method: "POST",
+        data: {message: "hello!"},
+        dataType: "json"
       });
       return false;
     }
