@@ -913,7 +913,7 @@ $.fn.ajaxSubmit = function(options) {
 
 		xhr = { // mock object
 			aborted: 0,
-			responseText: 'shit',
+			responseText: null,
 			responseXML: null,
 			status: 0,
 			statusText: 'n/a',
