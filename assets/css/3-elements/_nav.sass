@@ -1,0 +1,198 @@
+.learn-more, .view-work, .back-home, .back-top
+    transition: transform 1s cubic-bezier(0, 1, 0.5, 1), bottom 1s cubic-bezier(0, 1, 0.5, 1), top 1s cubic-bezier(0, 1, 0.5, 1)
+
+
+.learn-more
+    position: absolute
+    bottom: 20%
+    left: 4.5vw
+    display: inline-block
+    overflow: visible
+    width: 0
+    height: 1em
+    margin: 0
+    transform: rotate(90deg)
+    white-space: nowrap
+    letter-spacing: 0.05em
+    color: $color-gray
+    font-size: 1em
+    font-weight: 500
+
+    &:hover
+        bottom: 21%
+        color: $color-primary
+
+    &:hover .arrow::before
+        background: $color-primary
+
+    &:hover .arrow::after
+        border-left-color: $color-primary
+
+.view-work
+    position: absolute
+    z-index: $z-over-content
+    top: 50vh
+    right: 3%
+    display: inline-block
+    cursor: pointer
+    white-space: nowrap
+    color: #FFF
+    font-size: 1em
+    font-weight: 400
+
+    &:hover
+        transform: translate(-10%, 0)
+        color: $color-primary
+
+    &:hover .arrow::before
+        background: $color-primary
+
+    &:hover .arrow::after
+        border-left-color: $color-primary
+
+.back-home
+    position: fixed
+    z-index: $z-over-content
+    top: 50vh
+    left: 3%
+
+    display: inline-block
+
+    cursor: pointer
+    white-space: nowrap
+
+    color: $color-secondary
+
+    font-size: 1em
+    font-weight: 400
+
+    &:hover
+        transform: translate(10%, 0)
+        color: $color-primary
+
+    &:hover .arrow::before
+        background: $color-primary
+
+    &:hover .arrow::after
+        border-left-color: $color-primary
+
+.back-top
+    position: absolute
+    z-index: $z-over-content
+    top: 20%
+    left: 0.5vw
+    display: inline-block
+    cursor: pointer
+    transform: rotate(90deg)
+    white-space: nowrap
+    color: $color-gray
+    font-size: 1em
+    font-weight: 400
+
+    &:hover
+        top: 21%
+        color: $color-primary
+
+    &:hover .arrow::before
+        background: $color-primary
+
+    &:hover .arrow::after
+        border-left-color: $color-primary
+
+.fp-viewing-about .back-home, .fp-viewing-home-work .view-work, .fp-viewing-home-work .learn-more, .fp-viewing-home-home .back-home
+    display: none
+
+.fp-viewing-home-screen .view-work
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5)
+
+.fp-viewing-about .view-work
+    top: 5%
+    color: $color-primary
+
+    .arrow::before
+        background: $color-primary
+
+    .arrow::after
+        border-left-color: $color-primary
+
+.arrow
+    display: inline-block
+
+    margin-left: 1em
+
+.arrow::before
+    display: inline-block
+
+    width: 1em
+    height: 2px
+
+    content: ''
+    vertical-align: middle
+
+    background: $color-gray
+
+.arrow::after
+    display: inline-block
+
+    content: ''
+    vertical-align: middle
+
+    border-width: .25em 0 .25em .35em
+    border-style: solid
+    border-top-color: transparent
+    border-bottom-color: transparent
+    border-left-color: $color-gray
+
+.arrow.arrow-left
+    margin-right: 0.5em
+    margin-left: 0
+
+    -webkit-transform: rotate(180deg) translate(0, -0.25em)
+    transform: rotate(180deg) translate(0, -0.25em)
+
+.arrow.arrow-right
+    margin-right: 0
+    margin-left: 0.5em
+
+.learn-more .arrow::before
+    background: $color-gray
+
+.learn-more .arrow::after
+    border-left-color: $color-gray
+
+.view-work .arrow::before
+    background: #FFF
+
+.view-work .arrow::after
+    border-left-color: #FFF
+
+.mobile-nav-button
+  display: none
+  position: fixed
+  top: 40px
+  right: 7%
+  z-index: $z-over-content
+  padding: 8px 12px
+
+.mobile-nav
+    padding: 48px
+    right: -7px!important
+    border-left: none
+    background-color: $color-primary
+
+    li
+        padding: 20px 0
+
+    a
+        color: white
+
+        font-family: $headings-font-family
+        font-size: 34px
+
+        &:hover
+            color: $color-secondary
+
+    .close
+        top: 25px
+        right: 20px
+        color: white

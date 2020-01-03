@@ -1,0 +1,25 @@
+header
+    display: block
+    position: fixed
+    top: 90px!important
+    left: 3%!important
+    z-index: 100000
+    width: 120px
+    height: auto
+    overflow: hidden
+
+    .logo
+        display: block
+        z-index: 1
+        width: 120px
+        height: auto
+
+    .dark
+        img
+            filter: invert(1)
+
+
+@include breakpoint(sm)
+
+    header .logo img
+        filter: invert(1)

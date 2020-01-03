@@ -1,0 +1,151 @@
+@include breakpoint(sm)
+
+  html.fp-enabled, .fp-enabled body
+    overflow: visible
+
+  body
+    border-width: 7px
+
+    #frame-top
+      border-width: 7px
+
+    #frame-bottom
+      border-width: 7px
+
+    .fp-slidesContainer
+      width: 100%!important
+
+    header
+      left: 7%!important
+
+    .mobile-nav-button
+      display: block
+
+    .home
+      width: 100%!important
+
+      .row .last
+        order: 0
+
+      .intro
+        padding: 2em 3em
+
+        h2
+          margin-bottom: 40px
+          font-size: 38px
+          line-height: 44px
+
+        h1
+          margin-bottom: 10px
+          font-size: 28px
+          line-height: 28px
+
+        p, a
+          margin-bottom: 0
+          font-size: 18px
+
+      .hero
+        min-height: 400px
+
+      .circle .inner-circle
+        border-width: 35px
+        height: 200px
+        width: 200px
+
+      .circle
+        height: 230px
+        width: 200px
+        bottom: -39px
+        left: -80px
+
+      .hero .square
+        height: 150px
+        width: 170px
+        top: 120px
+        right: -30px
+
+      .hero .square .inner-square
+        border-width: 35px
+        height: 150px
+        width: 150px
+
+      .hero .me
+        width: 200px
+        height: 290px
+        background-position: top right
+
+  .pagenotfound .home .row
+    height: calc(100vh - 14px)
+
+  .about
+
+    .about-container
+      padding: 2em 3em
+
+      .offset-1
+        margin-left: 0!important
+
+      .row
+        margin-bottom: 0!important
+
+  .work
+    width: 100%!important
+
+    .onHover, .onHover .onHover__details, .onHover .title
+      opacity: 1
+      transform: translate3d(0, 0, 0)
+
+    .work-container
+      padding: 2em
+      margin-top: 0
+
+    .grid-item
+      flex: 0 0 100%
+      width: 100%
+
+  .about
+
+    footer
+      padding: 1.5em 2em
+      font-size: 13px
+      line-height: 17px
+
+    .heart
+      width: 13px
+
+@include breakpoint(md)
+  .home
+
+    .intro h2
+      font-size: 44px
+      line-height: 44px
+      margin-bottom: 58px
+
+    .circle .inner-circle
+      border-width: 45px
+      height: 200px
+      width: 200px
+
+    .circle
+      height: 230px
+      width: 200px
+      bottom: 70px
+      left: -80px
+
+    .hero .square
+      height: 200px
+      width: 220px
+      top: 120px
+      right: 70px
+
+    .hero .square .inner-square
+      border-width: 45px
+      height: 200px
+      width: 200px
+
+
+@include breakpoint(lg)
+
+@include breakpoint(1440px)
+
+@include breakpoint(1920px)

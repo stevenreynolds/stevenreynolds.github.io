@@ -1,0 +1,30 @@
+.about
+
+  .about-container
+
+    h4
+      position: relative
+
+    h4:before
+      position: absolute
+      content: ''
+      width: 40px
+      height: 4px
+      top: -13px
+      left: 0
+      background: $color-primary
+
+  footer
+    text-align: center
+    padding: 4.5em 2em 0
+    width: 100%
+
+    .heart
+      fill: red
+      position: relative
+      top: 2px
+      width: 17px
+      transition: all .5s ease-in-out
+
+    &:hover .heart
+      fill: $color-primary

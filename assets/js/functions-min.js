@@ -1,0 +1,3 @@
+$(document).ready(function(){$("#fullpage").fullpage({anchors:["home","about"],loopHorizontal:!1,controlArrows:!1,fixedElements:".view-work, .back-home, scene",scrollOverflow:!0,responsiveWidth:768,responsiveHeight:600,scrollOverflowReset:!0,scrollOverflowResetKey:"c3RldmVucmV5bm9sZHMuY29tX2I4OGMyTnliMnhzVDNabGNtWnNiM2RTWlhObGRBPT12eGI=",afterSlideLoad:function(e,l,o,n){0===n&&($.fn.fullpage.setAllowScrolling(!0,"down"),$.fn.fullpage.setKeyboardScrolling(!0,"down")),1===n&&($.fn.fullpage.setAllowScrolling(!1,"down"),$.fn.fullpage.setKeyboardScrolling(!1,"down"))}});var e=$(".grid").imagesLoaded(function(){
+// init Masonry after all images have loaded
+e.masonry({itemSelector:".grid-item",columnWidth:".col-6",percentPosition:!0,gutter:40})})});
