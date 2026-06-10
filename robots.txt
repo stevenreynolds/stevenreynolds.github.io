@@ -1,2 +1,10 @@
 User-agent: *
+Allow: /
+
+# Keep archive out of search results
+Disallow: /old/
+
+# Block utility/config files
 Disallow: /404.html
+
+Sitemap: https://stevenreynolds.com/sitemap.xml
