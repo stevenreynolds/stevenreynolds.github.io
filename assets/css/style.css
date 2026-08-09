@@ -419,7 +419,7 @@ body::before {
 }
 .work__row:first-child { border-top: none; }
 .work__row:last-child { border-bottom: 1px solid var(--hair); }
-.work__period { display: flex; flex-direction: column; gap: 4px; padding-top: 6px; }
+.work__period { display: flex; flex-direction: row; align-items: baseline; flex-wrap: nowrap; white-space: nowrap; gap: 6px; padding-top: 6px; }
 .work__period strong { font-family: var(--mono); font-size: 13px; font-weight: 500; letter-spacing: .04em; }
 .work__body h3 {
   font-family: var(--serif); font-weight: 400;
